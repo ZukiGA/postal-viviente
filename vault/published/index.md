@@ -1,5 +1,5 @@
 ---
-title: Blog Bohemio
+title: Postal Viviente
 ---
 
 Cafés. Comida. Caminatas urbanas. Viajes.
