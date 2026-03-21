@@ -1,3 +1,208 @@
-@use "./base.scss";
+/* Blog Bohemio - Custom Bohemian Theme */
 
-// put your custom CSS here!
+:root {
+  /* Bohemian Color Palette */
+  --beige: #f5deb3;
+  --terracotta: #e07856;
+  --olive: #808000;
+  --soft-black: #1a1a1a;
+  --cream: #faf8f3;
+  --warm-gray: #8b7d6b;
+  
+  /* Override Quartz defaults */
+  --light: var(--cream);
+  --lightgray: var(--beige);
+  --gray: var(--warm-gray);
+  --darkgray: var(--soft-black);
+  --dark: var(--soft-black);
+  --secondary: var(--terracotta);
+  --tertiary: var(--olive);
+  --highlight: var(--terracotta);
+  
+  /* Typography */
+  --headerFont: "Playfair Display", Georgia, serif;
+  --bodyFont: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+  --codeFont: "JetBrains Mono", "Courier New", monospace;
+}
+
+/* Typography Overrides */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--headerFont);
+  font-weight: 700;
+  color: var(--soft-black);
+  line-height: 1.3;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+body {
+  font-family: var(--bodyFont);
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: var(--soft-black);
+  background: var(--cream);
+}
+
+/* Generous Whitespace */
+article {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+}
+
+p {
+  margin-bottom: 1.5rem;
+}
+
+/* Links - Terracotta accent */
+a {
+  color: var(--terracotta);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s;
+}
+
+a:hover {
+  border-bottom-color: var(--terracotta);
+}
+
+/* Code blocks - Warm tones */
+code {
+  font-family: var(--codeFont);
+  background: var(--beige);
+  padding: 0.2em 0.4em;
+  border-radius: 3px;
+  font-size: 0.9em;
+}
+
+pre {
+  background: var(--beige);
+  padding: 1.5rem;
+  border-radius: 8px;
+  overflow-x: auto;
+  border-left: 4px solid var(--terracotta);
+}
+
+/* Gallery - Photo grid */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.gallery img:hover {
+  transform: scale(1.02);
+}
+
+/* Location metadata */
+.location {
+  color: var(--warm-gray);
+  font-size: 0.95rem;
+  font-style: italic;
+  margin-bottom: 1rem;
+}
+
+/* Rating stars */
+.rating {
+  color: var(--terracotta);
+  font-size: 1.2rem;
+  margin: 1rem 0;
+}
+
+/* Tags */
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 2rem;
+}
+
+.tag {
+  background: var(--beige);
+  color: var(--soft-black);
+  padding: 0.3rem 0.8rem;
+  border-radius: 16px;
+  font-size: 0.85rem;
+  text-decoration: none;
+}
+
+.tag:hover {
+  background: var(--terracotta);
+  color: white;
+}
+
+/* Mobile swipe hint */
+@media (max-width: 768px) {
+  .gallery::after {
+    content: "← Swipe →";
+    display: block;
+    text-align: center;
+    color: var(--warm-gray);
+    font-size: 0.85rem;
+    margin-top: 0.5rem;
+  }
+}
+
+/* Graph view - Warm tones */
+.graph-node {
+  fill: var(--terracotta);
+}
+
+.graph-node:hover {
+  fill: var(--olive);
+}
+
+.graph-link {
+  stroke: var(--warm-gray);
+}
+
+/* Search - Bohemian styling */
+#search-container input {
+  background: var(--cream);
+  border: 2px solid var(--beige);
+  color: var(--soft-black);
+  padding: 0.75rem;
+  border-radius: 8px;
+  font-family: var(--bodyFont);
+}
+
+#search-container input:focus {
+  border-color: var(--terracotta);
+  outline: none;
+}
+
+/* Navigation - Minimal & warm */
+nav {
+  background: var(--cream);
+  border-bottom: 1px solid var(--beige);
+}
+
+nav a {
+  color: var(--soft-black);
+  border-bottom: none;
+}
+
+nav a:hover {
+  color: var(--terracotta);
+}
+
+/* Footer */
+footer {
+  color: var(--warm-gray);
+  font-size: 0.9rem;
+  text-align: center;
+  padding: 2rem;
+  border-top: 1px solid var(--beige);
+}

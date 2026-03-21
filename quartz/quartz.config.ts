@@ -8,36 +8,36 @@ import * as Plugin from "./quartz/plugins"
  */
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "Quartz 4",
+    pageTitle: "Blog Bohemio",
     pageTitleSuffix: "",
     enableSPA: true,
     enablePopovers: true,
     analytics: {
       provider: "plausible",
     },
-    locale: "en-US",
-    baseUrl: "quartz.jzhao.xyz",
+    locale: "es-ES",
+    baseUrl: "zukiga.github.io/blog-bohemio",
     ignorePatterns: ["private", "templates", ".obsidian"],
     defaultDateType: "modified",
     theme: {
       fontOrigin: "googleFonts",
       cdnCaching: true,
       typography: {
-        header: "Schibsted Grotesk",
-        body: "Source Sans Pro",
-        code: "IBM Plex Mono",
+        header: "Playfair Display",
+        body: "Inter",
+        code: "JetBrains Mono",
       },
       colors: {
         lightMode: {
-          light: "#faf8f8",
-          lightgray: "#e5e5e5",
-          gray: "#b8b8b8",
-          darkgray: "#4e4e4e",
-          dark: "#2b2b2b",
-          secondary: "#284b63",
-          tertiary: "#84a59d",
-          highlight: "rgba(143, 159, 169, 0.15)",
-          textHighlight: "#fff23688",
+          light: "#faf8f3",        // cream
+          lightgray: "#f5deb3",    // beige
+          gray: "#8b7d6b",         // warm gray
+          darkgray: "#1a1a1a",     // soft black
+          dark: "#1a1a1a",         // soft black
+          secondary: "#e07856",    // terracotta
+          tertiary: "#808000",     // olive
+          highlight: "rgba(224, 120, 86, 0.15)",
+          textHighlight: "#f5deb388",
         },
         darkMode: {
           light: "#161618",
