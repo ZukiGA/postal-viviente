@@ -1,0 +1,40 @@
+name: Deploy Blog Bohemio
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+      
+      - name: Install dependencies
+        run: |
+          npm install
+          cd quartz && npm install
+      
+      - name: Strip EXIF data
+        run: node scripts/strip-exif.js
+      
+      - name: Optimize images
+        run: node scripts/optimize-images.js
+      
+      - name: Build with Quartz
+        run: cd quartz && npx quartz build
+      
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./quartz/public
+          cname: blog-bohemio.com  # Optional: custom domain
