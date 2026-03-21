@@ -319,6 +319,35 @@ pre {
   body[data-slug="index"] .article-title {
     display: none;
   }
+  
+  /* Fix toolbar spacing on mobile */
+  .flex-component {
+    gap: 0.75rem !important;
+  }
+  
+  /* Make search bar more compact on mobile */
+  .search button {
+    padding: 0.4rem 0.6rem;
+  }
+  
+  .search p {
+    font-size: 0.9rem;
+  }
+  
+  /* Consistent button sizes */
+  .darkmode, .readermode {
+    padding: 0.4rem;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .darkmode svg, .readermode svg {
+    width: 20px;
+    height: 20px;
+  }
 }
 
 /* Smooth scroll behavior */
