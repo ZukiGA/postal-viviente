@@ -19,15 +19,13 @@ type FlexConfig = {
 
 export default ((config: FlexConfig) => {
   const Flex: QuartzComponent = (props: QuartzComponentProps) => {
-    const direction = config.direction ?? "row"
-    const wrap = config.wrap ?? "nowrap"
-    const gap = config.gap ?? "1rem"
-
-    // Use CSS classes instead of inline styles for mobile override
+    // Don't use inline styles - rely entirely on CSS classes
     return (
       <div
         class={classNames(props.displayClass, "flex-component", "flex-mobile-row")}
-        style={`--flex-direction: ${direction}; --flex-wrap: ${wrap}; --flex-gap: ${gap};`}
+        data-direction={config.direction ?? "row"}
+        data-wrap={config.wrap ?? "nowrap"}
+        data-gap={config.gap ?? "1rem"}
       >
         {config.components.map((c) => {
           const grow = c.grow ? 1 : 0

@@ -64,12 +64,20 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* Flex component base styles */
+/* Flex component base styles - use data attributes instead of CSS vars */
 .flex-component {
   display: flex;
-  flex-direction: var(--flex-direction, row);
-  flex-wrap: var(--flex-wrap, nowrap);
-  gap: var(--flex-gap, 1rem);
+  flex-direction: row; /* default */
+  flex-wrap: nowrap;
+  gap: 1rem;
+}
+
+.flex-component[data-direction="column"] {
+  flex-direction: column;
+}
+
+.flex-component[data-wrap="wrap"] {
+  flex-wrap: wrap;
 }
 
 /* Generous Whitespace */
