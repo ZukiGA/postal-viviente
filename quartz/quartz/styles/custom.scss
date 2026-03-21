@@ -320,18 +320,18 @@ pre {
     display: none;
   }
   
-  /* Fix toolbar - force horizontal layout on mobile */
-  .left.sidebar .flex-component {
+  /* Fix toolbar - force horizontal layout on mobile (override inline styles) */
+  .left.sidebar .flex-component[style*="flex-direction"] {
     flex-direction: row !important;
     flex-wrap: nowrap !important;
     gap: 0.5rem !important;
-    align-items: center;
+    align-items: center !important;
   }
   
   /* Make search bar more compact on mobile */
   .search {
-    flex: 1 1 auto;
-    max-width: none;
+    flex: 1 1 auto !important;
+    max-width: none !important;
   }
   
   .search button {
@@ -344,7 +344,7 @@ pre {
   
   /* Consistent button sizes */
   .darkmode, .readermode {
-    flex: 0 0 auto;
+    flex: 0 0 auto !important;
     padding: 0.5rem;
     width: 40px;
     height: 40px;
