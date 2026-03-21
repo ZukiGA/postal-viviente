@@ -4,8 +4,8 @@ const fs = require('fs');
 const path = require('path');
 
 const token = process.env.BOT_TOKEN;
-const authorizedUserId = parseInt(process.env.AUTHORIZED_USER_ID);
-const vaultPath = process.env.VAULT_PATH || '../vault';
+const authorizedUserId = parseInt(process.env.USER_ID);
+const vaultPath = process.env.VAULT_PATH;
 
 const bot = new TelegramBot(token, { polling: true });
 
@@ -115,6 +115,29 @@ bot.onText(/\/create/, (msg) => {
     .join('\n');
 
   bot.sendMessage(chatId, `Choose a template:\n\n${options}`);
+});
+
+bot.onText(/\/upload (.+) (.+)/, async (msg, match) => {
+  const chatId = msg.chat.id;
+  
+  if (!isAuthorized(msg.from.id)) return;
+
+  const folderName = match[1];
+  const templateType = match[2];
+
+  bot.sendMessage(chatId, `📥 Processing upload: ${folderName} (${templateType})...`);
+
+  try {
+    const { execSync } = require('child_process');
+    const result = execSync(
+      `node ${path.join(__dirname, '../scripts/process-upload.js')} "${folderName}" "${templateType}"`,
+      { encoding: 'utf8' }
+    );
+
+    bot.sendMessage(chatId, `✅ Draft created!\n\n${result}`);
+  } catch (err) {
+    bot.sendMessage(chatId, `❌ Error: ${err.message}`);
+  }
 });
 
 // Handle photo uploads
