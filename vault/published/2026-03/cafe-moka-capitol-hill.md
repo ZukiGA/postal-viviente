@@ -9,10 +9,7 @@ tags:
   - capitol-hill
   - seattle
 description: "Morning cortado at a hidden gem in Capitol Hill"
-location:
-  name: "Cafe Moka"
-  neighborhood: "Capitol Hill"
-  city: "Seattle"
+location: "Cafe Moka, Capitol Hill, Seattle"
 rating: 5
 gallery:
   - test-photo.jpg
