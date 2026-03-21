@@ -35,11 +35,11 @@ jobs:
       - name: Strip EXIF data
         run: node scripts/strip-exif.js
       
-      - name: Optimize images
-        run: node scripts/optimize-images.js
-      
       - name: Build with Quartz
         run: cd quartz && npx quartz build
+      
+      - name: Optimize images
+        run: node scripts/optimize-images.js
       
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
