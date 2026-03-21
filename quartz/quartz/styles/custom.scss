@@ -71,6 +71,24 @@ article {
   padding: 2rem 1.5rem;
 }
 
+/* Index page specific styling */
+body[data-slug="index"] article {
+  text-align: center;
+  padding-top: 3rem;
+}
+
+body[data-slug="index"] article > p {
+  font-size: 1.15rem;
+  line-height: 1.8;
+  color: var(--warm-gray);
+  margin-bottom: 2rem;
+}
+
+body[data-slug="index"] h2 {
+  margin-top: 3rem;
+  color: var(--terracotta);
+}
+
 p {
   margin-bottom: 1.5rem;
 }
@@ -262,7 +280,7 @@ pre {
   box-shadow: 0 2px 8px rgba(139, 125, 107, 0.15);
 }
 
-/* Mobile swipe hint & responsive adjustments */
+/* Mobile - Hide article title on index page (already in header) */
 @media (max-width: 768px) {
   .gallery::after {
     content: "← Swipe →";
@@ -290,6 +308,16 @@ pre {
     flex-direction: column;
     align-items: flex-start;
     gap: 1rem;
+  }
+  
+  /* Reduce padding on index page */
+  body[data-slug="index"] article {
+    padding-top: 0.5rem;
+  }
+  
+  /* Hide page title in article on index (shown in sidebar already) */
+  body[data-slug="index"] .article-title {
+    display: none;
   }
 }
 
