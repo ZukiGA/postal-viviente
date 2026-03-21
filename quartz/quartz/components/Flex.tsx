@@ -27,6 +27,7 @@ export default ((config: FlexConfig) => {
       <div
         class={classNames(props.displayClass, "flex-component")}
         style={`flex-direction: ${direction}; flex-wrap: ${wrap}; gap: ${gap};`}
+        data-mobile-fix="true"
       >
         {config.components.map((c) => {
           const grow = c.grow ? 1 : 0
@@ -44,6 +45,17 @@ export default ((config: FlexConfig) => {
             </div>
           )
         })}
+        <script dangerouslySetInnerHTML={{
+          __html: `
+            if (window.innerWidth <= 768) {
+              const toolbar = document.currentScript.parentElement;
+              if (toolbar) {
+                toolbar.style.flexDirection = 'row';
+                toolbar.style.gap = '0.5rem';
+              }
+            }
+          `
+        }} />
       </div>
     )
   }
