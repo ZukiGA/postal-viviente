@@ -47,13 +47,17 @@ export default ((config: FlexConfig) => {
         })}
         <script dangerouslySetInnerHTML={{
           __html: `
-            if (window.innerWidth <= 768) {
+            (function() {
               const toolbar = document.currentScript.parentElement;
-              if (toolbar) {
-                toolbar.style.flexDirection = 'row';
-                toolbar.style.gap = '0.5rem';
+              function fixToolbar() {
+                if (window.matchMedia('(max-width: 768px)').matches) {
+                  toolbar.style.flexDirection = 'row';
+                  toolbar.style.gap = '0.5rem';
+                }
               }
-            }
+              fixToolbar();
+              window.addEventListener('resize', fixToolbar);
+            })();
           `
         }} />
       </div>
