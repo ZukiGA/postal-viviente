@@ -73,11 +73,11 @@ body {
 }
 
 .flex-component[data-direction="column"] {
-  flex-direction: column;
+  flex-direction: column !important;
 }
 
 .flex-component[data-wrap="wrap"] {
-  flex-wrap: wrap;
+  flex-wrap: wrap !important;
 }
 
 /* Generous Whitespace */
