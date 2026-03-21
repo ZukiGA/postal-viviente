@@ -23,11 +23,11 @@ export default ((config: FlexConfig) => {
     const wrap = config.wrap ?? "nowrap"
     const gap = config.gap ?? "1rem"
 
+    // Use CSS classes instead of inline styles for mobile override
     return (
       <div
-        class={classNames(props.displayClass, "flex-component")}
-        style={`flex-direction: ${direction}; flex-wrap: ${wrap}; gap: ${gap};`}
-        data-mobile-fix="true"
+        class={classNames(props.displayClass, "flex-component", "flex-mobile-row")}
+        style={`--flex-direction: ${direction}; --flex-wrap: ${wrap}; --flex-gap: ${gap};`}
       >
         {config.components.map((c) => {
           const grow = c.grow ? 1 : 0
@@ -45,24 +45,25 @@ export default ((config: FlexConfig) => {
             </div>
           )
         })}
-        <script dangerouslySetInnerHTML={{
-          __html: `
-            (function() {
-              const toolbar = document.currentScript.parentElement;
-              function fixToolbar() {
-                if (window.matchMedia('(max-width: 768px)').matches) {
-                  toolbar.style.flexDirection = 'row';
-                  toolbar.style.gap = '0.5rem';
-                }
-              }
-              fixToolbar();
-              window.addEventListener('resize', fixToolbar);
-            })();
-          `
-        }} />
       </div>
     )
   }
+
+  Flex.css = `
+    .flex-component {
+      display: flex;
+      flex-direction: var(--flex-direction, row);
+      flex-wrap: var(--flex-wrap, nowrap);
+      gap: var(--flex-gap, 1rem);
+    }
+    
+    @media (max-width: 768px) {
+      .left.sidebar .flex-component.flex-mobile-row {
+        flex-direction: row !important;
+        gap: 0.5rem !important;
+      }
+    }
+  `
 
   Flex.afterDOMLoaded = concatenateResources(
     ...config.components.map((c) => c.Component.afterDOMLoaded),
