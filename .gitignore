@@ -1,0 +1,17 @@
+
+# Dependencies
+node_modules/
+package-lock.json
+telegram-bot/node_modules/
+telegram-bot/package-lock.json
+quartz/node_modules/
+quartz/package-lock.json
+
+# Build output
+quartz/public/
+quartz/.quartz-cache/
+
+# Environment
+.env
+telegram-bot/.env
+
