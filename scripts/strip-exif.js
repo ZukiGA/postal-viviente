@@ -10,7 +10,7 @@
 
 const fs = require('fs');
 const path = require('path');
-const { exifr } = require('exifr');
+const exifr = require('exifr');
 
 const IMAGES_DIR = path.join(__dirname, '../vault/images');
 const PUBLISHED_DIR = path.join(__dirname, '../vault/published');

@@ -14,7 +14,8 @@ location:
   neighborhood: "Capitol Hill"
   city: "Seattle"
 rating: 5
-gallery: []
+gallery:
+  - test-photo.jpg
 ---
 
 # Cafe Moka - Capitol Hill
