@@ -8,8 +8,9 @@
     "dev": "nodemon index.js"
   },
   "dependencies": {
-    "node-telegram-bot-api": "^0.64.0",
-    "dotenv": "^16.4.1"
+    "dotenv": "^16.4.1",
+    "icloud-photos-share": "^1.0.2",
+    "node-telegram-bot-api": "^0.64.0"
   },
   "devDependencies": {
     "nodemon": "^3.0.2"

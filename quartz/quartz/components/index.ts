@@ -24,6 +24,7 @@ import Comments from "./Comments"
 import Flex from "./Flex"
 import ConditionalRender from "./ConditionalRender"
 import Gallery from "./Gallery"
+import PostMetadata from "./PostMetadata"
 
 export {
   ArticleTitle,
@@ -52,4 +53,6 @@ export {
   Flex,
   ConditionalRender,
   Gallery,
+  PostMetadata,
 }
+
