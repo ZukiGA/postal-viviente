@@ -1,7 +1,7 @@
 /* Blog Bohemio - Custom Bohemian Theme */
 
 :root {
-  /* Bohemian Color Palette */
+  /* Bohemian Color Palette - Light Mode */
   --beige: #f5deb3;
   --terracotta: #e07856;
   --olive: #808000;
@@ -23,6 +23,31 @@
   --headerFont: "Playfair Display", Georgia, serif;
   --bodyFont: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
   --codeFont: "JetBrains Mono", "Courier New", monospace;
+}
+
+/* Dark Mode - Bohemian Night Palette */
+:root[saved-theme="dark"] {
+  --dark-charcoal: #1a1614;
+  --dark-beige: #3d3530;
+  --muted-terracotta: #c4614a;
+  --soft-olive: #9b9b6b;
+  --warm-white: #e8e4df;
+  --mid-gray: #9b8f7f;
+  
+  --light: var(--dark-charcoal);
+  --lightgray: var(--dark-beige);
+  --gray: var(--mid-gray);
+  --darkgray: var(--warm-white);
+  --dark: var(--warm-white);
+  --secondary: var(--muted-terracotta);
+  --tertiary: var(--soft-olive);
+  --highlight: var(--muted-terracotta);
+  --cream: var(--dark-charcoal);
+  --beige: var(--dark-beige);
+  --terracotta: var(--muted-terracotta);
+  --olive: var(--soft-olive);
+  --soft-black: var(--warm-white);
+  --warm-gray: var(--mid-gray);
 }
 
 /* Typography Overrides */
