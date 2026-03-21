@@ -439,7 +439,679 @@ Completamente gratis para siempre.
 
 ---
 
-## 📱 User Journeys Definidos
+## 📱 FLUJO COMPLETO DETALLADO v3.0
+
+### ═══════════════════════════════════════════════════
+### FASE 1: CAPTURA (Durante la experiencia)
+### ═══════════════════════════════════════════════════
+
+**En el café / durante viaje / en el momento:**
+
+1. **Tomas fotos normalmente** (Camera app)
+   - 3, 5, 10, 15 fotos... las que sean
+   - Captura natural, sin pensar en blog todavía
+
+2. **Cuando sientas "esto es para el blog":**
+   - Abres Photos app
+   - Crear nuevo album compartido
+   - Nombre descriptivo:
+     - ☕ "Capitol Hill Cafe - Mar 21"
+     - 🌆 "Kerry Park Sunset"
+     - 🍜 "Ramen Discovery Fremont"
+     - ✈️ "Weekend Ocean Shores"
+   - Seleccionas todas las fotos del momento
+   - Agregar al album
+
+3. **Agregas album a "Blog Albums"** (album de albums)
+   - Marca este album como "para publicar"
+
+---
+
+### ═══════════════════════════════════════════════════
+### FASE 2: NOTIFICACIÓN INTELIGENTE (Flexible timing)
+### ═══════════════════════════════════════════════════
+
+**iOS Shortcut detecta nuevo album en "Blog Albums"**
+
+**OPCIÓN A - Escribir ahora (en el momento):**
+```
+Notification aparece:
+┌─────────────────────────────────────┐
+│ 📸 New Blog Album Ready              │
+│ "Capitol Hill Cafe - Mar 21"        │
+│ 6 photos                             │
+│                                      │
+│ [Write Story] [Later]                │
+└─────────────────────────────────────┘
+
+Tap [Write Story] → prompt detallado
+```
+
+**OPCIÓN B - Escribir después (cuando tengas tiempo):**
+```
+Tap [Later] → se guarda en pending
+
+Más tarde (cuando tú quieras):
+→ Abres Obsidian mobile
+→ Ves lista "Pending Albums"
+→ Tap el que quieras escribir
+```
+
+---
+
+### ═══════════════════════════════════════════════════
+### FASE 3: TEMPLATE SELECTION (Guided writing)
+### ═══════════════════════════════════════════════════
+
+**Cuando eliges escribir, ves:**
+
+```
+┌─────────────────────────────────────────────┐
+│ ☕ Capitol Hill Cafe - Mar 21                │
+│ 6 photos • 11:47 AM • Capitol Hill          │
+├─────────────────────────────────────────────┤
+│ [Gallery preview: 6 thumbnails]             │
+├─────────────────────────────────────────────┤
+│                                             │
+│ Choose template:                            │
+│ ○ Cafe Visit                                │
+│ ○ Food Experience                           │
+│ ○ City Exploration                          │
+│ ○ Travel Story                              │
+│ ○ Free Form                                 │
+│                                             │
+│ [Continue] [Skip for now]                   │
+└─────────────────────────────────────────────┘
+```
+
+---
+
+### ═══════════════════════════════════════════════════
+### FASE 4: TEMPLATE PROMPTS DETALLADOS
+### ═══════════════════════════════════════════════════
+
+## ☕ Template 1: CAFE VISIT
+
+**Screen 1 - Title & Overview:**
+```
+┌─────────────────────────────────────────────┐
+│ Title (auto-suggested):                     │
+│ [Capitol Hill Cafe - March 21]              │
+│                                             │
+│ One-line summary:                           │
+│ [Cortado perfecto en tarde tranquila]      │
+│                                             │
+│ [Next]                                      │
+└─────────────────────────────────────────────┘
+```
+
+**Screen 2 - First Impressions:**
+```
+┌─────────────────────────────────────────────┐
+│ The arrival                                 │
+│ ────────────────                            │
+│ What drew you here?                         │
+│ What did you notice first?                  │
+│                                             │
+│ [                                           │
+│  Caminando por Capitol Hill, vi la          │
+│  ventana grande con luz natural...          │
+│                                             │
+│                                             │
+│                                           ] │
+│                                             │
+│ [Next]  [Skip]                              │
+└─────────────────────────────────────────────┘
+```
+
+**Screen 3 - The Coffee:**
+```
+┌─────────────────────────────────────────────┐
+│ The coffee                                  │
+│ ────────────────                            │
+│ What did you order?                         │
+│ How was it?                                 │
+│                                             │
+│ [                                           │
+│  Cortado. Espresso de Kenya, cremoso,       │
+│  temperatura perfecta. No muy amargo.       │
+│                                             │
+│                                           ] │
+│                                             │
+│ [Next]  [Skip]                              │
+└─────────────────────────────────────────────┘
+```
+
+**Screen 4 - The Atmosphere:**
+```
+┌─────────────────────────────────────────────┐
+│ The atmosphere                              │
+│ ────────────────                            │
+│ Describe the vibe:                          │
+│ • Lighting / music / people                 │
+│ • What made it special?                     │
+│                                             │
+│ [                                           │
+│  Jazz suave, poca gente, barista amable.    │
+│  Ventanas grandes, luz de tarde entrando.   │
+│                                             │
+│                                           ] │
+│                                             │
+│ [Next]  [Skip]                              │
+└─────────────────────────────────────────────┘
+```
+
+**Screen 5 - Notable Details:**
+```
+┌─────────────────────────────────────────────┐
+│ Details that stood out                      │
+│ ────────────────                            │
+│ Small things you want to remember:          │
+│                                             │
+│ [                                           │
+│  El arte latte. Plantas en las mesas.       │
+│  El barista recomendó el cortado sin que    │
+│  yo preguntara.                             │
+│                                           ] │
+│                                             │
+│ [Next]  [Skip]                              │
+└─────────────────────────────────────────────┘
+```
+
+**Screen 6 - Reflection:**
+```
+┌─────────────────────────────────────────────┐
+│ Why this moment matters                     │
+│ ────────────────                            │
+│ What will you remember?                     │
+│ Why did you want to capture this?           │
+│                                             │
+│ [                                           │
+│  A veces necesitas un lugar tranquilo para  │
+│  solo existir. Esto fue eso.               │
+│                                             │
+│                                           ] │
+│                                             │
+│ [Next]  [Skip]                              │
+└─────────────────────────────────────────────┘
+```
+
+**Screen 7 - Rating (optional):**
+```
+┌─────────────────────────────────────────────┐
+│ Would you return?                           │
+│                                             │
+│ ☆☆☆☆☆ (tap to rate)                        │
+│                                             │
+│ [Skip rating]  [Done]                       │
+└─────────────────────────────────────────────┘
+```
+
+**Screen 8 - Preview:**
+```
+┌─────────────────────────────────────────────┐
+│ Preview draft                               │
+│ ────────────────                            │
+│ [Rendered markdown preview]                 │
+│                                             │
+│ • 6 photos in gallery                       │
+│ • ~150 words                                │
+│ • 4/6 sections filled                       │
+│                                             │
+│ [Save Draft]  [Edit]  [Discard]             │
+└─────────────────────────────────────────────┘
+```
+
+---
+
+## 🍜 Template 2: FOOD EXPERIENCE
+
+**Screen 1 - Title:**
+```
+┌─────────────────────────────────────────────┐
+│ Title:                                      │
+│ [Tonkatsu Ramen en Fremont]                 │
+│                                             │
+│ Dish name:                                  │
+│ [Tonkatsu Ramen]                            │
+│                                             │
+│ [Next]                                      │
+└─────────────────────────────────────────────┘
+```
+
+**Screen 2 - The Arrival:**
+```
+┌─────────────────────────────────────────────┐
+│ First impressions                           │
+│ ────────────────                            │
+│ How did it look?                            │
+│ What caught your eye?                       │
+│                                             │
+│ [                                           │
+│  Bowl humeante, caldo dorado, tonkatsu      │
+│  crujiente flotando. Presentación simple    │
+│  pero perfecta.                             │
+│                                           ] │
+│                                             │
+│ [Next]  [Skip]                              │
+└─────────────────────────────────────────────┘
+```
+
+**Screen 3 - The Taste:**
+```
+┌─────────────────────────────────────────────┐
+│ The taste                                   │
+│ ────────────────                            │
+│ Flavors, textures, temperature:             │
+│                                             │
+│ [                                           │
+│  Caldo rico, un poco picante. Tonkatsu      │
+│  crujiente por fuera, suave por dentro.     │
+│  Fideos perfectos. Todo equilibrado.        │
+│                                           ] │
+│                                             │
+│ [Next]  [Skip]                              │
+└─────────────────────────────────────────────┘
+```
+
+**Screen 4 - The Context:**
+```
+┌─────────────────────────────────────────────┐
+│ The moment                                  │
+│ ────────────────                            │
+│ Who were you with?                          │
+│ Why this place, this day?                   │
+│                                             │
+│ [                                           │
+│  Solo, después de caminar por Fremont.      │
+│  Tenía frío, necesitaba algo caliente.      │
+│                                           ] │
+│                                             │
+│ [Next]  [Skip]                              │
+└─────────────────────────────────────────────┘
+```
+
+**Screen 5 - Standout Moments:**
+```
+┌─────────────────────────────────────────────┐
+│ What stood out                              │
+│ ────────────────                            │
+│ Memorable moments while eating:             │
+│                                             │
+│ [                                           │
+│  El chef gritando órdenes en japonés.       │
+│  Watching locals slurp loudly.              │
+│  Burned my tongue pero no me importó.       │
+│                                           ] │
+│                                             │
+│ [Next]  [Skip]                              │
+└─────────────────────────────────────────────┘
+```
+
+**Screen 6 - Would Return?:**
+```
+┌─────────────────────────────────────────────┐
+│ Final thoughts                              │
+│ ────────────────                            │
+│ Would you come back?                        │
+│ What would you order next time?             │
+│                                             │
+│ [                                           │
+│  Absolutely. Quiero probar el miso ramen.   │
+│                                           ] │
+│                                             │
+│ ☆☆☆☆☆ (optional rating)                    │
+│                                             │
+│ [Done]                                      │
+└─────────────────────────────────────────────┘
+```
+
+---
+
+## 🌆 Template 3: CITY EXPLORATION
+
+**Screen 1 - Title:**
+```
+┌─────────────────────────────────────────────┐
+│ Title:                                      │
+│ [Pike Place Morning Walk]                   │
+│                                             │
+│ Route / Area:                               │
+│ [Pike Place → Waterfront → Post Alley]     │
+│                                             │
+│ [Next]                                      │
+└─────────────────────────────────────────────┘
+```
+
+**Screen 2 - Starting Point:**
+```
+┌─────────────────────────────────────────────┐
+│ How did it begin?                           │
+│ ────────────────                            │
+│ Where did you start?                        │
+│ What was your mood?                         │
+│                                             │
+│ [                                           │
+│  Salí temprano, 8 AM. Quería ver el         │
+│  mercado antes de que llegara la gente.     │
+│  Aire fresco, cielo gris.                   │
+│                                           ] │
+│                                             │
+│ [Next]  [Skip]                              │
+└─────────────────────────────────────────────┘
+```
+
+**Screen 3 - Discoveries:**
+```
+┌─────────────────────────────────────────────┐
+│ What did you find?                          │
+│ ────────────────                            │
+│ Unexpected moments along the way:           │
+│                                             │
+│ [                                           │
+│  - Pescadores descargando catch del día     │
+│  - Artista callejero tocando violín         │
+│  - Gato naranja durmiendo en la ventana     │
+│  - Olor a donuts recién hechos              │
+│                                           ] │
+│                                             │
+│ [Next]  [Skip]                              │
+└─────────────────────────────────────────────┘
+```
+
+**Screen 4 - Best Moment:**
+```
+┌─────────────────────────────────────────────┐
+│ Highlight of the walk                       │
+│ ────────────────                            │
+│ What was your favorite photo/moment?        │
+│                                             │
+│ [Select photo from album]                   │
+│ [📸 Photo 4 of 12]                          │
+│                                             │
+│ Why this one?                               │
+│ [                                           │
+│  La luz entre los edificios. Golden hour    │
+│  pero en la mañana.                         │
+│                                           ] │
+│                                             │
+│ [Next]  [Skip]                              │
+└─────────────────────────────────────────────┘
+```
+
+**Screen 5 - Reflections:**
+```
+┌─────────────────────────────────────────────┐
+│ What were you thinking?                     │
+│ ────────────────                            │
+│ Thoughts while walking:                     │
+│                                             │
+│ [                                           │
+│  Seattle se siente diferente cuando está    │
+│  vacío. Como si fuera solo tuyo por un      │
+│  momento.                                   │
+│                                           ] │
+│                                             │
+│ [Next]  [Skip]                              │
+└─────────────────────────────────────────────┘
+```
+
+**Screen 6 - New Perspective:**
+```
+┌─────────────────────────────────────────────┐
+│ What did you learn?                         │
+│ ────────────────                            │
+│ New perspective gained:                     │
+│                                             │
+│ [                                           │
+│  A veces necesitas perderte sin destino.    │
+│  Las mejores fotos vienen cuando no las     │
+│  estás buscando.                            │
+│                                           ] │
+│                                             │
+│ [Done]                                      │
+└─────────────────────────────────────────────┘
+```
+
+---
+
+## ✈️ Template 4: TRAVEL STORY
+
+**Screen 1 - Title:**
+```
+┌─────────────────────────────────────────────┐
+│ Title:                                      │
+│ [Weekend in Ocean Shores]                   │
+│                                             │
+│ Destination:                                │
+│ [Ocean Shores, WA]                          │
+│                                             │
+│ Dates:                                      │
+│ [March 21-22, 2026]                         │
+│                                             │
+│ [Next]                                      │
+└─────────────────────────────────────────────┘
+```
+
+**Screen 2 - The Journey:**
+```
+┌─────────────────────────────────────────────┐
+│ Getting there                               │
+│ ────────────────                            │
+│ The journey to your destination:            │
+│                                             │
+│ [                                           │
+│  Road trip 3 horas. Playlist preparado,     │
+│  café en el cupholder. Salimos antes del    │
+│  amanecer para ver la costa con luz de      │
+│  mañana.                                    │
+│                                           ] │
+│                                             │
+│ [Next]  [Skip]                              │
+└─────────────────────────────────────────────┘
+```
+
+**Screen 3 - Arrival:**
+```
+┌─────────────────────────────────────────────┐
+│ First impressions                           │
+│ ────────────────                            │
+│ What did it feel like arriving?             │
+│                                             │
+│ [                                           │
+│  Olor a mar inmediatamente. Viento fuerte.  │
+│  Playa vacía, solo nosotros y las gaviotas. │
+│  Gris pero hermoso.                         │
+│                                           ] │
+│                                             │
+│ [Next]  [Skip]                              │
+└─────────────────────────────────────────────┘
+```
+
+**Screen 4 - Key Moments:**
+```
+┌─────────────────────────────────────────────┐
+│ Highlights                                  │
+│ ────────────────                            │
+│ Key moments (chronological or favorites):   │
+│                                             │
+│ [                                           │
+│  - Seafood festival, ostras frescas         │
+│  - Sunset caminata en la playa              │
+│  - Bonfire con locals                       │
+│  - Morning coffee mirando las olas          │
+│                                           ] │
+│                                             │
+│ [Next]  [Skip]                              │
+└─────────────────────────────────────────────┘
+```
+
+**Screen 5 - People:**
+```
+┌─────────────────────────────────────────────┐
+│ Who you met                                 │
+│ ────────────────                            │
+│ People encountered:                         │
+│                                             │
+│ [                                           │
+│  Pareja de Seattle que viene cada año.      │
+│  Pescador local que nos recomendó dónde     │
+│  comer. Barista del café que conocía        │
+│  nuestra orden.                             │
+│                                           ] │
+│                                             │
+│ [Next]  [Skip]                              │
+└─────────────────────────────────────────────┘
+```
+
+**Screen 6 - Unexpected:**
+```
+┌─────────────────────────────────────────────┐
+│ Unexpected moments                          │
+│ ────────────────                            │
+│ Things you didn't plan for:                 │
+│                                             │
+│ [                                           │
+│  Lluvia torrencial pero seguimos caminando. │
+│  Encontramos ese café escondido.            │
+│  Vimos ballenas a lo lejos.                 │
+│                                           ] │
+│                                             │
+│ [Next]  [Skip]                              │
+└─────────────────────────────────────────────┘
+```
+
+**Screen 7 - Takeaway:**
+```
+┌─────────────────────────────────────────────┐
+│ What stays with you                         │
+│ ────────────────                            │
+│ What will you remember most?                │
+│                                             │
+│ [                                           │
+│  A veces el plan no importa. Los mejores    │
+│  momentos son los que no puedes predecir.   │
+│  El océano te hace sentir pequeño pero      │
+│  libre.                                     │
+│                                           ] │
+│                                             │
+│ [Done]                                      │
+└─────────────────────────────────────────────┘
+```
+
+---
+
+## 📝 Template 5: FREE FORM
+
+**Screen 1 - Title:**
+```
+┌─────────────────────────────────────────────┐
+│ Title:                                      │
+│ [                                         ] │
+│                                             │
+│ [Next]                                      │
+└─────────────────────────────────────────────┘
+```
+
+**Screen 2 - Opening:**
+```
+┌─────────────────────────────────────────────┐
+│ Opening thought                             │
+│ ────────────────                            │
+│ How does this story begin?                  │
+│                                             │
+│ [                                           │
+│                                             │
+│                                             │
+│                                             │
+│                                           ] │
+│                                             │
+│ [Next]  [Skip]                              │
+└─────────────────────────────────────────────┘
+```
+
+**Screen 3 - Main Story:**
+```
+┌─────────────────────────────────────────────┐
+│ Your story                                  │
+│ ────────────────                            │
+│ Write freely:                               │
+│                                             │
+│ [                                           │
+│                                             │
+│                                             │
+│                                             │
+│                                             │
+│                                             │
+│                                             │
+│                                           ] │
+│                                             │
+│ [Expand]  [Next]  [Skip]                    │
+└─────────────────────────────────────────────┘
+```
+
+**Screen 4 - Closing:**
+```
+┌─────────────────────────────────────────────┐
+│ Closing reflection                          │
+│ ────────────────                            │
+│ How does it end?                            │
+│                                             │
+│ [                                           │
+│                                             │
+│                                             │
+│                                           ] │
+│                                             │
+│ [Done]                                      │
+└─────────────────────────────────────────────┘
+```
+
+---
+
+### ═══════════════════════════════════════════════════
+### FASE 5: DRAFT REVIEW & PUBLISH
+### ═══════════════════════════════════════════════════
+
+**After completing any template:**
+
+```
+┌─────────────────────────────────────────────┐
+│ Draft created ✓                             │
+│                                             │
+│ Capitol Hill Cafe - March 21                │
+│ • 6 photos                                  │
+│ • ~180 words                                │
+│ • Template: Cafe Visit                      │
+│                                             │
+│ Saved to: Obsidian/drafts/                  │
+│                                             │
+│ [View in Obsidian]  [Done]                  │
+└─────────────────────────────────────────────┘
+```
+
+**Later, in Obsidian (mobile or desktop):**
+
+```
+📁 Drafts (4 pending)
+  ├─ 2026-03-21 Capitol Hill Cafe
+  ├─ 2026-03-20 Tonkatsu Ramen Fremont
+  ├─ 2026-03-19 Pike Place Morning
+  └─ 2026-03-18 Kerry Park Sunset
+
+[Edit] [Publish All] [Publish Selected]
+```
+
+**Publish flow:**
+1. Review draft (optional edits)
+2. Tap "Publish"
+3. Moves to `published/2026-03/`
+4. Git auto-sync
+5. Quartz builds
+6. Live on GitHub Pages (~2 min)
+
+---
+
+## 📱 User Journeys - Summary
 
 ### Journey 1: Quick Post (En el Momento)
 
