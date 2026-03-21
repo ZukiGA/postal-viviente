@@ -23,6 +23,11 @@ async function stripExif() {
   let errors = 0;
 
   for (const filePath of imageFiles) {
+    // Skip WebP files - they don't retain EXIF from optimization
+    if (filePath.endsWith('.webp')) {
+      continue;
+    }
+    
     try {
       const exifData = await exifr.parse(filePath);
       
