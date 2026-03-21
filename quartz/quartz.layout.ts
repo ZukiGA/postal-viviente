@@ -62,9 +62,10 @@ export const defaultListPageLayout: PageLayout = {
           grow: true,
         },
         { Component: Component.Darkmode() },
+        { Component: Component.ReaderMode() },
+        { Component: Component.Explorer() },
       ],
     }),
-    Component.Explorer(),
   ],
   right: [],
 }
