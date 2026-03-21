@@ -64,6 +64,14 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* Flex component base styles */
+.flex-component {
+  display: flex;
+  flex-direction: var(--flex-direction, row);
+  flex-wrap: var(--flex-wrap, nowrap);
+  gap: var(--flex-gap, 1rem);
+}
+
 /* Generous Whitespace */
 article {
   max-width: 680px;
@@ -320,12 +328,10 @@ pre {
     display: none;
   }
   
-  /* Fix toolbar - force horizontal layout on mobile (override inline styles) */
-  .left.sidebar .flex-component[style*="flex-direction"] {
+  /* Fix toolbar - force horizontal layout on mobile (override CSS vars) */
+  .left.sidebar .flex-component.flex-mobile-row {
     flex-direction: row !important;
-    flex-wrap: nowrap !important;
     gap: 0.5rem !important;
-    align-items: center !important;
   }
   
   /* Make search bar more compact on mobile */

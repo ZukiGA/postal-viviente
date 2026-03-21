@@ -49,22 +49,6 @@ export default ((config: FlexConfig) => {
     )
   }
 
-  Flex.css = `
-    .flex-component {
-      display: flex;
-      flex-direction: var(--flex-direction, row);
-      flex-wrap: var(--flex-wrap, nowrap);
-      gap: var(--flex-gap, 1rem);
-    }
-    
-    @media (max-width: 768px) {
-      .left.sidebar .flex-component.flex-mobile-row {
-        flex-direction: row !important;
-        gap: 0.5rem !important;
-      }
-    }
-  `
-
   Flex.afterDOMLoaded = concatenateResources(
     ...config.components.map((c) => c.Component.afterDOMLoaded),
   )
