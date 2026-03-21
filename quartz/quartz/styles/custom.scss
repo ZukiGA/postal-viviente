@@ -320,14 +320,22 @@ pre {
     display: none;
   }
   
-  /* Fix toolbar spacing on mobile */
-  .flex-component {
-    gap: 0.75rem !important;
+  /* Fix toolbar - force horizontal layout on mobile */
+  .left.sidebar .flex-component {
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    gap: 0.5rem !important;
+    align-items: center;
   }
   
   /* Make search bar more compact on mobile */
+  .search {
+    flex: 1 1 auto;
+    max-width: none;
+  }
+  
   .search button {
-    padding: 0.4rem 0.6rem;
+    padding: 0.5rem 0.75rem;
   }
   
   .search p {
@@ -336,9 +344,10 @@ pre {
   
   /* Consistent button sizes */
   .darkmode, .readermode {
-    padding: 0.4rem;
-    width: 36px;
-    height: 36px;
+    flex: 0 0 auto;
+    padding: 0.5rem;
+    width: 40px;
+    height: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
