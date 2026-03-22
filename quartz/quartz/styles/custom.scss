@@ -598,3 +598,14 @@ body[data-slug="index"] article h1:first-of-type {
   object-fit: cover;
   display: block;
 }
+
+/* Center page title heading */
+h1.article-title {
+  text-align: center;
+}
+
+/* Breadcrumbs: slightly bolder */
+.breadcrumb-container a,
+.breadcrumb-container span {
+  font-weight: 500;
+}
