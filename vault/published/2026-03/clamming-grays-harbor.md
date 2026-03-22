@@ -10,7 +10,7 @@ weather: "Frío, nublado"
 wouldReturn: true
 activity: "Clamming"
 departure: "5:00 AM"
-companions: "Diana, Adry, Armando"
+companions: "1233 y sus amigos"
 ---
 
 Diana y Adry nos lanzaron la propuesta hace dos semanas: Grays Harbor, a "pescar" moluscos. No sabía bien qué significaba eso, pero el plan sonaba suficientemente raro como para decir que sí. Primera aventura de vuelta a Seattle.
