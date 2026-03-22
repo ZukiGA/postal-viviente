@@ -1,0 +1,205 @@
+/* Mobile UX Improvements */
+
+/* Better touch targets for mobile toolbar */
+@media (max-width: 768px) {
+  /* Larger base font size on mobile */
+  body {
+    font-size: 17px;
+    line-height: 1.8;
+  }
+  
+  /* Better touch targets - min 44×44px */
+  .darkmode, .search button, .explorer button {
+    min-width: 44px;
+    min-height: 44px;
+    padding: 12px;
+  }
+  
+  /* Toolbar icons larger */
+  .flex-component svg {
+    width: 24px !important;
+    height: 24px !important;
+  }
+  
+  /* More padding for tap comfort */
+  .flex-component {
+    gap: 1.25rem;
+  }
+  
+  /* Article breathing room */
+  article {
+    padding: 1.5rem 1.25rem;
+  }
+  
+  /* Better readability */
+  h1 {
+    font-size: 2.25rem;
+    line-height: 1.2;
+  }
+  
+  h2 {
+    font-size: 1.75rem;
+    line-height: 1.3;
+  }
+  
+  h3 {
+    font-size: 1.35rem;
+  }
+  
+  p {
+    margin-bottom: 1.75rem;
+  }
+  
+  /* Images full-bleed on small screens */
+  article img {
+    margin-left: -1.25rem;
+    margin-right: -1.25rem;
+    width: calc(100% + 2.5rem);
+    max-width: none;
+    border-radius: 0;
+  }
+  
+  /* Tag pills larger touch targets */
+  .tags a {
+    padding: 0.5rem 1rem;
+    min-height: 36px;
+    display: inline-flex;
+    align-items: center;
+  }
+}
+
+/* Breadcrumbs styling */
+.breadcrumbs {
+  font-size: 0.9rem;
+  color: var(--warm-gray);
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.breadcrumbs a {
+  color: var(--olive-green);
+  border-bottom: none;
+  transition: color 0.2s;
+}
+
+.breadcrumbs a:hover {
+  color: var(--sage-green);
+}
+
+.breadcrumbs .arrow {
+  color: var(--warm-gray);
+  margin: 0 0.25rem;
+}
+
+/* Recent posts grid with thumbnails */
+.recent-notes {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.recent-notes article {
+  background: var(--cream);
+  border: 1px solid var(--beige);
+  border-radius: 12px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(139, 125, 107, 0.1);
+}
+
+.recent-notes article:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(139, 125, 107, 0.2);
+  border-color: var(--olive-green);
+}
+
+.recent-notes .thumbnail {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}
+
+.recent-notes .post-info {
+  padding: 1.5rem;
+}
+
+.recent-notes h3 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.25rem;
+  line-height: 1.3;
+}
+
+.recent-notes .meta {
+  font-size: 0.9rem;
+  color: var(--warm-gray);
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.recent-notes .excerpt {
+  margin-top: 1rem;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--soft-black);
+}
+
+/* Tag cloud/filter */
+.tag-cloud {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin: 2rem 0;
+  justify-content: center;
+}
+
+.tag-cloud a {
+  padding: 0.5rem 1.25rem;
+  background: var(--beige);
+  color: var(--soft-black);
+  border-radius: 24px;
+  border: 2px solid transparent;
+  transition: all 0.2s;
+  font-size: 0.95rem;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.tag-cloud a:hover {
+  background: var(--olive-green);
+  color: white;
+  border-color: var(--olive-green);
+  transform: translateY(-2px);
+}
+
+.tag-cloud .count {
+  opacity: 0.7;
+  font-size: 0.85rem;
+  margin-left: 0.25rem;
+}
+
+/* Dark mode adjustments */
+:root[saved-theme="dark"] {
+  .recent-notes article {
+    background: var(--dark-beige);
+    border-color: var(--mid-gray);
+  }
+  
+  .tag-cloud a {
+    background: var(--dark-beige);
+    color: var(--warm-white);
+  }
+  
+  .tag-cloud a:hover {
+    background: var(--sage-muted);
+  }
+  
+  .breadcrumbs {
+    color: var(--mid-gray);
+  }
+}
