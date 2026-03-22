@@ -47,11 +47,6 @@ Aprendimos algo nuevo, disfrutamos el frío del PNW, y volvimos con historias.
 
 ---
 
-**Detalles**
-- **Cuándo:** 21 de marzo, 2026
-- **Con quién:** 1233 y sus amigos (6 total)
-- **Duración:** 8 horas redondas (2 pescando)
-
 **Para la Próxima**
 
 Volvería sin dudarlo. La próxima vez con licencia (para hacerlo legal) y ganas de llegar a las 100 almejas. Y de nuevo con este grupo — porque lo que hace que estas salidas funcionen no son las almejas, sino la gente.
