@@ -24,6 +24,12 @@ export const defaultContentPageLayout: PageLayout = {
     Component.TagList(),
     Component.Gallery(),
   ],
+  afterBody: [
+    Component.ConditionalRender({
+      component: Component.RecentNotes({ limit: 10 }),
+      condition: (page) => page.fileData.slug === "index",
+    }),
+  ],
   left: [
     Component.PageTitle(),
     Component.MobileOnly(Component.Spacer()),
