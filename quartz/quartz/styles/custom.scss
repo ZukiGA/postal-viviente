@@ -115,19 +115,29 @@ article {
 /* Index page specific styling */
 body[data-slug="index"] article {
   text-align: center;
-  padding-top: 3rem;
+  padding-top: 1rem; /* Reduced from 3rem */
+  max-width: 100%; /* Full width for grid */
 }
 
 body[data-slug="index"] article > p {
   font-size: 1.15rem;
   line-height: 1.8;
   color: var(--warm-gray);
-  margin-bottom: 2rem;
+  margin-bottom: 1rem; /* Reduced from 2rem */
+}
+
+body[data-slug="index"] h1 {
+  margin-bottom: 0.5rem; /* Tighter */
 }
 
 body[data-slug="index"] h2 {
-  margin-top: 3rem;
+  margin-top: 2rem; /* Reduced from 3rem */
   color: var(--olive-green);
+}
+
+body[data-slug="index"] .recent-notes {
+  margin-top: 2rem;
+  text-align: left; /* Reset from centered */
 }
 
 p {
@@ -514,3 +524,32 @@ footer {
 
 /* Import mobile UX improvements */
 @import "mobile-ux.scss";
+
+/* Homepage hero section */
+body[data-slug="index"] .recent-notes {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1.5rem;
+}
+
+body[data-slug="index"] .recent-notes h3 {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  color: var(--olive-green);
+}
+
+/* Make first post larger (hero) */
+body[data-slug="index"] .recent-notes .recent-li:first-child {
+  grid-column: 1 / -1; /* Span full width */
+}
+
+body[data-slug="index"] .recent-notes .recent-li:first-child .thumbnail {
+  height: 400px;
+  object-fit: cover;
+}
+
+body[data-slug="index"] .recent-notes .recent-li:first-child h3 {
+  font-size: 2rem;
+  text-align: left;
+}

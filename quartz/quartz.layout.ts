@@ -20,16 +20,15 @@ export const defaultContentPageLayout: PageLayout = {
     Component.Breadcrumbs(),
     Component.ArticleTitle(),
     Component.ContentMeta(),
-    Component.PostMetadata(),
-    Component.TagList(),
-    Component.Gallery(),
-  ],
-  afterBody: [
     Component.ConditionalRender({
       component: Component.RecentNotes({ limit: 10 }),
       condition: (page) => page.fileData.slug === "index",
     }),
+    Component.PostMetadata(),
+    Component.TagList(),
+    Component.Gallery(),
   ],
+  afterBody: [],
   left: [
     Component.PageTitle(),
     Component.MobileOnly(Component.Spacer()),
