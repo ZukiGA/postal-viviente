@@ -574,3 +574,17 @@ body[data-slug="index"] .page-header article {
 body[data-slug="index"] .page-header .recent-notes {
   order: 3; /* Posts grid last */
 }
+
+/* Hide auto-generated title on index, show content h1 instead */
+body[data-slug="index"] h1.article-title {
+  display: none;
+}
+
+body[data-slug="index"] article h1:first-of-type {
+  font-size: 1.15rem;
+  font-weight: normal;
+  font-family: var(--bodyFont);
+  color: var(--warm-gray);
+  text-align: center;
+  margin-bottom: 2rem;
+}

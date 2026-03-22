@@ -1,7 +1,7 @@
 ---
-title: "Un archivo visual de lo que no quiero olvidar."
+title: "Postal Viviente"
 enableToc: false
 showReadingTime: false
 ---
 
-## Postal Viviente
+# Un archivo visual de lo que no quiero olvidar.
