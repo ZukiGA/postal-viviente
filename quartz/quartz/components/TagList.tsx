@@ -29,7 +29,7 @@ TagList.css = `
   list-style: none;
   display: flex;
   padding-left: 0;
-  gap: 0.4rem;
+  gap: 0.5rem;
   margin: 1rem 0;
   flex-wrap: wrap;
 }
@@ -37,7 +37,7 @@ TagList.css = `
 .section-li > .section > .tags {
   justify-content: flex-end;
 }
-  
+
 .tags > li {
   display: inline-block;
   white-space: nowrap;
@@ -46,10 +46,28 @@ TagList.css = `
 }
 
 a.internal.tag-link {
-  border-radius: 8px;
-  background-color: var(--highlight);
-  padding: 0.2rem 0.4rem;
-  margin: 0 0.1rem;
+  border-radius: 20px;
+  background-color: var(--beige, #f5deb3);
+  color: var(--soft-black, #1a1a1a);
+  padding: 0.35rem 0.9rem;
+  margin: 0;
+  font-size: 0.85rem;
+  font-weight: 500;
+  border: 1px solid transparent;
+  box-shadow: 0 2px 4px rgba(139, 125, 107, 0.1);
+  transition: all 0.2s ease;
+}
+
+a.internal.tag-link::before {
+  content: none !important;
+}
+
+a.internal.tag-link:hover {
+  background-color: var(--olive-green, #6B8E23);
+  color: white;
+  border-color: var(--olive-green, #6B8E23);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(139, 125, 107, 0.2);
 }
 `
 
