@@ -25,6 +25,7 @@ import Flex from "./Flex"
 import ConditionalRender from "./ConditionalRender"
 import Gallery from "./Gallery"
 import PostMetadata from "./PostMetadata"
+import PlaceCard from "./PlaceCard"
 
 export {
   ArticleTitle,
@@ -54,5 +55,6 @@ export {
   ConditionalRender,
   Gallery,
   PostMetadata,
+  PlaceCard,
 }
 

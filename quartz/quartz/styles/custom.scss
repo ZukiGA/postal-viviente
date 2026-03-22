@@ -588,3 +588,51 @@ body[data-slug="index"] article h1:first-of-type {
   text-align: center;
   margin-bottom: 2rem;
 }
+
+/* Place Card Component */
+.place-card {
+  background: var(--lightgray);
+  border: 1px solid var(--gray);
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin: 2rem 0;
+}
+
+.place-card-title {
+  font-family: var(--bodyFont);
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  color: var(--gray);
+  margin: 0 0 1rem 0;
+  text-transform: uppercase;
+}
+
+.place-card-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.place-card-col {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.place-card-item {
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.place-card-item strong {
+  font-weight: 600;
+  color: var(--darkgray);
+}
+
+@media (max-width: 768px) {
+  .place-card-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}

@@ -32,6 +32,7 @@ export const defaultContentPageLayout: PageLayout = {
     }),
     Component.PostMetadata(),
     Component.TagList(),
+    Component.PlaceCard(),
   ],
   afterBody: [],
   left: [

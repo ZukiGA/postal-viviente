@@ -5,6 +5,12 @@ tags: [adventure, beach, road-trip, pnw]
 location: "Grays Harbor, Washington"
 rating: 4
 thumbnail: "/static/images/mini-adventure/photo-7-800w.jpg"
+distance: "2h 30m desde Seattle"
+weather: "Frío, nublado"
+wouldReturn: true
+activity: "Clamming"
+departure: "5:00 AM"
+companions: "Diana, Adry, Armando"
 ---
 
 Diana y Adry nos lanzaron la propuesta hace dos semanas: Grays Harbor, a "pescar" moluscos. No sabía bien qué significaba eso, pero el plan sonaba suficientemente raro como para decir que sí. Primera aventura de vuelta a Seattle.
