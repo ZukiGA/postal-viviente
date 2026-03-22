@@ -26,6 +26,7 @@ import ConditionalRender from "./ConditionalRender"
 import Gallery from "./Gallery"
 import PostMetadata from "./PostMetadata"
 import PlaceCard from "./PlaceCard"
+import HeroImage from "./HeroImage"
 
 export {
   ArticleTitle,
@@ -56,5 +57,6 @@ export {
   Gallery,
   PostMetadata,
   PlaceCard,
+  HeroImage,
 }
 

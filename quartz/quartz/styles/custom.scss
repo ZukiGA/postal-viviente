@@ -591,8 +591,8 @@ body[data-slug="index"] article h1:first-of-type {
 
 /* Place Card Component */
 .place-card {
-  background: var(--lightgray);
-  border: 1px solid var(--gray);
+  background: #f5f1e8;
+  border: 1px solid #e5ddc8;
   border-radius: 8px;
   padding: 1.5rem;
   margin: 2rem 0;
@@ -600,10 +600,10 @@ body[data-slug="index"] article h1:first-of-type {
 
 .place-card-title {
   font-family: var(--bodyFont);
-  font-size: 0.875rem;
+  font-size: 0.75rem;
   font-weight: 600;
-  letter-spacing: 0.1em;
-  color: var(--gray);
+  letter-spacing: 0.15em;
+  color: #9b8b7e;
   margin: 0 0 1rem 0;
   text-transform: uppercase;
 }
@@ -635,4 +635,20 @@ body[data-slug="index"] article h1:first-of-type {
     grid-template-columns: 1fr;
     gap: 1rem;
   }
+}
+
+/* Hero Image */
+.hero-image {
+  width: 100%;
+  margin: 2rem 0;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.hero-image img {
+  width: 100%;
+  height: auto;
+  max-height: 500px;
+  object-fit: cover;
+  display: block;
 }

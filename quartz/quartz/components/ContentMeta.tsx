@@ -42,6 +42,23 @@ export default ((opts?: Partial<ContentMetaOptions>) => {
         segments.push(<span>{displayedTime}</span>)
       }
 
+      // Add location if present
+      const location = fileData.frontmatter?.location
+      if (location) {
+        segments.push(
+          <span class="location-meta">
+            📍 {location}
+          </span>
+        )
+      }
+
+      // Add rating if present
+      const rating = fileData.frontmatter?.rating
+      if (rating && typeof rating === 'number') {
+        const stars = "★".repeat(rating) + "☆".repeat(5 - rating)
+        segments.push(<span class="rating-meta">{stars}</span>)
+      }
+
       return (
         <p show-comma={options.showComma} class={classNames(displayClass, "content-meta")}>
           {segments}
