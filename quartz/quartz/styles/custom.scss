@@ -555,21 +555,22 @@ body[data-slug="index"] .recent-notes .recent-li:first-child h3 {
 }
 
 /* Swap title and tagline order on homepage */
-body[data-slug="index"] article {
+body[data-slug="index"] .page-header {
   display: flex;
   flex-direction: column;
 }
 
-body[data-slug="index"] h1.article-title {
+body[data-slug="index"] .page-header h1.article-title {
   order: 2; /* Title goes second */
   margin-top: 0.5rem;
 }
 
-body[data-slug="index"] article > p:first-of-type {
+body[data-slug="index"] .page-header article {
   order: 1; /* Tagline goes first */
   margin-bottom: 0.5rem;
+  padding: 0; /* Remove article padding on index */
 }
 
-body[data-slug="index"] .recent-notes {
+body[data-slug="index"] .page-header .recent-notes {
   order: 3; /* Posts grid last */
 }
