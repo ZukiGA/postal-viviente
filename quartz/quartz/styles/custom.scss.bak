@@ -222,6 +222,54 @@ pre {
 }
 
 /* Post metadata - Location & Rating */
+.post-metadata {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  align-items: center;
+  margin: 1.5rem 0 2.5rem;
+  padding: 1rem;
+  background: var(--beige);
+  border-radius: 8px;
+  border-left: 4px solid var(--olive-green);
+}
+
+.location {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--warm-gray);
+  font-size: 0.95rem;
+  font-style: italic;
+}
+
+.location::before {
+  content: "📍";
+  font-style: normal;
+}
+
+/* Rating stars */
+.rating {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--olive-green);
+  font-size: 1.1rem;
+}
+
+.rating::before {
+  content: "Rating:";
+  font-size: 0.9rem;
+  color: var(--warm-gray);
+  font-family: var(--bodyFont);
+}
+
+.rating .stars {
+  letter-spacing: 2px;
+  color: var(--olive-green);
+}
+
+/* Tags - Enhanced pill design */
 .tags {
   display: flex;
   flex-wrap: wrap;

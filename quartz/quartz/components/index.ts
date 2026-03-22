@@ -24,7 +24,7 @@ import Comments from "./Comments"
 import Flex from "./Flex"
 import ConditionalRender from "./ConditionalRender"
 import Gallery from "./Gallery"
-import PostMetadata from "./PostMetadata"
+// import PostMetadata from "./PostMetadata" // DEPRECATED: merged into ContentMeta
 import PlaceCard from "./PlaceCard"
 import HeroImage from "./HeroImage"
 
@@ -55,7 +55,7 @@ export {
   Flex,
   ConditionalRender,
   Gallery,
-  PostMetadata,
+  // PostMetadata, // DEPRECATED
   PlaceCard,
   HeroImage,
 }
