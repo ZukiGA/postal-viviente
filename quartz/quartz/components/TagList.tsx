@@ -12,7 +12,7 @@ const TagList: QuartzComponent = ({ fileData, displayClass }: QuartzComponentPro
           return (
             <li>
               <a href={linkDest} class="internal tag-link">
-                {tag}
+                #{tag}
               </a>
             </li>
           )
@@ -30,7 +30,7 @@ TagList.css = `
   display: flex;
   padding-left: 0;
   gap: 0.5rem;
-  margin: 1rem 0;
+  margin: 0.3rem 0 0.8rem 0;
   flex-wrap: wrap;
 }
 
@@ -47,14 +47,14 @@ TagList.css = `
 
 a.internal.tag-link {
   border-radius: 20px;
-  background-color: var(--beige, #f5deb3);
+  background-color: #f5f1e8;
   color: var(--soft-black, #1a1a1a);
-  padding: 0.35rem 0.9rem;
+  padding: 0.3rem 0.8rem;
   margin: 0;
-  font-size: 0.85rem;
+  font-size: 0.82rem;
   font-weight: 500;
-  border: 1px solid transparent;
-  box-shadow: 0 2px 4px rgba(139, 125, 107, 0.1);
+  border: 1px solid #d9d3c7;
+  box-shadow: none;
   transition: all 0.2s ease;
 }
 

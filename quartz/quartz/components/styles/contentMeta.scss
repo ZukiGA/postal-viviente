@@ -1,19 +1,14 @@
 .content-meta {
   margin-top: 0;
+  margin-bottom: 0.4rem;
   color: var(--gray);
   font-size: 0.95rem;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   gap: 0;
+}
 
-  > *:not(:last-child) {
-    margin-right: 0.5em;
-
-    &::after {
-      content: "·";
-      margin-left: 0.5em;
-      color: var(--gray);
-    }
-  }
+.meta-sep {
+  color: var(--gray);
 }

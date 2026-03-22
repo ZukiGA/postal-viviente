@@ -59,9 +59,15 @@ export default ((opts?: Partial<ContentMetaOptions>) => {
         segments.push(<span class="rating-meta">{stars}</span>)
       }
 
+      const separated: (string | JSX.Element)[] = []
+      segments.forEach((seg, i) => {
+        if (i > 0) separated.push(<span class="meta-sep"> · </span>)
+        separated.push(seg)
+      })
+
       return (
         <p show-comma={options.showComma} class={classNames(displayClass, "content-meta")}>
-          {segments}
+          {separated}
         </p>
       )
     } else {
