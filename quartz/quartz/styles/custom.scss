@@ -170,7 +170,7 @@ pre {
   padding: 1.5rem;
   border-radius: 8px;
   overflow-x: auto;
-  border-left: 4px solid var(--olive-green);
+  border-left: 4px solid var(--lightgray);
 }
 
 /* Gallery - Photo grid with enhanced visuals */
@@ -228,7 +228,7 @@ pre {
   gap: 0.75rem;
   margin: 2.5rem 0 1.5rem;
   padding-top: 1.5rem;
-  border-top: 1px solid var(--beige);
+  border-top: 1px solid var(--lightgray);
 }
 
 .tag {
@@ -274,7 +274,7 @@ pre {
   padding: 1rem;
   background: var(--cream);
   border-radius: 8px;
-  border-left: 3px solid var(--olive-green);
+  border-left: 3px solid var(--lightgray);
   transition: all 0.2s ease;
 }
 
@@ -389,7 +389,7 @@ article img {
 
 /* Blockquotes - Bohemian style */
 blockquote {
-  border-left: 4px solid var(--olive-green);
+  border-left: 4px solid var(--lightgray);
   padding-left: 1.5rem;
   margin: 2rem 0;
   font-style: italic;
@@ -410,7 +410,7 @@ hr {
   background: linear-gradient(
     to right,
     transparent,
-    var(--beige),
+    var(--lightgray),
     transparent
   );
   margin: 3rem 0;
@@ -447,7 +447,7 @@ hr {
 /* Navigation - Minimal & warm */
 nav {
   background: var(--cream);
-  border-bottom: 1px solid var(--beige);
+  border-bottom: 1px solid var(--lightgray);
 }
 
 nav a {
@@ -465,7 +465,7 @@ footer {
   font-size: 0.9rem;
   text-align: center;
   padding: 2rem;
-  border-top: 1px solid var(--beige);
+  border-top: 1px solid var(--lightgray);
 }
 
 /* Import mobile UX improvements */
