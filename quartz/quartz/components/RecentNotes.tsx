@@ -35,6 +35,14 @@ export default ((userOpts?: Partial<Options>) => {
     const opts = { ...defaultOptions(cfg), ...userOpts }
     const pages = allFiles.filter(opts.filter).sort(opts.sort)
     const remaining = Math.max(0, pages.length - opts.limit)
+    
+    // Extract first image from content
+    const getFirstImage = (content: string | undefined): string | null => {
+      if (!content) return null
+      const imgMatch = content.match(/!\[.*?\]\((.*?)\)/)
+      return imgMatch ? imgMatch[1] : null
+    }
+    
     return (
       <div class={classNames(displayClass, "recent-notes")}>
         <h3>{opts.title ?? i18n(cfg.locale).components.recentNotes.title}</h3>
@@ -42,10 +50,18 @@ export default ((userOpts?: Partial<Options>) => {
           {pages.slice(0, opts.limit).map((page) => {
             const title = page.frontmatter?.title ?? i18n(cfg.locale).propertyDefaults.title
             const tags = page.frontmatter?.tags ?? []
+            const thumbnail = getFirstImage(page.text)
 
             return (
               <li class="recent-li">
                 <div class="section">
+                  {thumbnail && (
+                    <div class="thumbnail-wrapper">
+                      <a href={resolveRelative(fileData.slug!, page.slug!)} class="internal">
+                        <img src={thumbnail} alt={title} class="thumbnail" loading="lazy" />
+                      </a>
+                    </div>
+                  )}
                   <div class="desc">
                     <h3>
                       <a href={resolveRelative(fileData.slug!, page.slug!)} class="internal">
