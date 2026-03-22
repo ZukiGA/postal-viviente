@@ -27,6 +27,8 @@ import Gallery from "./Gallery"
 // import PostMetadata from "./PostMetadata" // DEPRECATED: merged into ContentMeta
 import PlaceCard from "./PlaceCard"
 import HeroImage from "./HeroImage"
+import IndexHero from "./IndexHero"
+import ExploreSection from "./ExploreSection"
 
 export {
   ArticleTitle,
@@ -58,5 +60,7 @@ export {
   // PostMetadata, // DEPRECATED
   PlaceCard,
   HeroImage,
+  IndexHero,
+  ExploreSection,
 }
 

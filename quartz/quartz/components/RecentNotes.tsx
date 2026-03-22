@@ -1,5 +1,5 @@
 import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "./types"
-import { FullSlug, SimpleSlug, resolveRelative } from "../util/path"
+import { SimpleSlug, resolveRelative } from "../util/path"
 import { QuartzPluginData } from "../plugins/vfile"
 import { byDateAndAlphabetical } from "./PageList"
 import style from "./styles/recentNotes.scss"
@@ -62,54 +62,35 @@ export default ((userOpts?: Partial<Options>) => {
     
     return (
       <div class={classNames(displayClass, "recent-notes")}>
-        <h3>{opts.title ?? i18n(cfg.locale).components.recentNotes.title}</h3>
-        <ul class="recent-ul">
+        <h2 class="recent-notes-title">Notas recientes</h2>
+        <div class="recent-grid">
           {pages.slice(0, opts.limit).map((page) => {
             const title = page.frontmatter?.title ?? i18n(cfg.locale).propertyDefaults.title
-            const tags = page.frontmatter?.tags ?? []
             const thumbnail = getThumbnail(page)
 
             return (
-              <li class="recent-li">
-                <div class="section">
-                  {thumbnail && (
-                    <div class="thumbnail-wrapper">
-                      <a href={resolveRelative(fileData.slug!, page.slug!)} class="internal">
-                        <img src={thumbnail} alt={title} class="thumbnail" loading="lazy" />
-                      </a>
-                    </div>
-                  )}
-                  <div class="desc">
-                    <h3>
-                      <a href={resolveRelative(fileData.slug!, page.slug!)} class="internal">
-                        {title}
-                      </a>
-                    </h3>
-                  </div>
+              <div class="recent-card">
+                {thumbnail && (
+                  <a href={resolveRelative(fileData.slug!, page.slug!)} class="internal recent-card-image-link">
+                    <img src={thumbnail} alt={title} class="recent-card-thumb" loading="lazy" />
+                  </a>
+                )}
+                <div class="recent-card-info">
+                  <h3 class="recent-card-title">
+                    <a href={resolveRelative(fileData.slug!, page.slug!)} class="internal">
+                      {title}
+                    </a>
+                  </h3>
                   {page.dates && (
-                    <p class="meta">
+                    <p class="recent-card-date">
                       <Date date={getDate(cfg, page)!} locale={cfg.locale} />
                     </p>
                   )}
-                  {opts.showTags && (
-                    <ul class="tags">
-                      {tags.map((tag) => (
-                        <li>
-                          <a
-                            class="internal tag-link"
-                            href={resolveRelative(fileData.slug!, `tags/${tag}` as FullSlug)}
-                          >
-                            {tag}
-                          </a>
-                        </li>
-                      ))}
-                    </ul>
-                  )}
                 </div>
-              </li>
+              </div>
             )
           })}
-        </ul>
+        </div>
         {opts.linkToMore && remaining > 0 && (
           <p>
             <a href={resolveRelative(fileData.slug!, opts.linkToMore)}>
