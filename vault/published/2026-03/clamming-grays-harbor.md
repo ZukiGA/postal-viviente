@@ -38,8 +38,6 @@ Aprendimos algo nuevo, disfrutamos el frío del PNW, y volvimos con historias.
 
 ![La pesca del día](/static/images/mini-adventure/photo-6-800w.jpg)
 
-![El grupo explorando la costa](/static/images/mini-adventure/photo-7-800w.jpg)
-
 ---
 
 **Detalles**
@@ -51,3 +49,5 @@ Aprendimos algo nuevo, disfrutamos el frío del PNW, y volvimos con historias.
 **Para la Próxima**
 
 Volvería sin dudarlo. La próxima vez con licencia (para hacerlo legal) y ganas de llegar a las 100 almejas. Y de nuevo con este grupo — porque lo que hace que estas salidas funcionen no son las almejas, sino la gente.
+
+![El grupo explorando la costa](/static/images/mini-adventure/photo-7-800w.jpg)
