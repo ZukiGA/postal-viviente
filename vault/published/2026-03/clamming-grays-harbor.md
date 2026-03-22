@@ -1,12 +1,12 @@
 ---
-title: "Clamming en Ocean Shores"
+title: "Clamming en Grays Harbor"
 date: 2026-03-21
 tags: [adventure, beach, road-trip, pnw]
-location: "Ocean Shores, Washington"
+location: "Grays Harbor, Washington"
 rating: 4
 ---
 
-Diana y Adry nos lanzaron la propuesta hace dos semanas: Ocean Shores, a "pescar" moluscos. No sabía bien qué significaba eso, pero el plan sonaba suficientemente raro como para decir que sí. Primera aventura de vuelta a Seattle.
+Diana y Adry nos lanzaron la propuesta hace dos semanas: Grays Harbor, a "pescar" moluscos. No sabía bien qué significaba eso, pero el plan sonaba suficientemente raro como para decir que sí. Primera aventura de vuelta a Seattle.
 
 Armando me despertó a las 4:50 AM — me había quedado dormido, claro. Adry pasó por todos en un auto rentado. Arrancamos desde Seattle mientras la ciudad todavía dormía.
 
@@ -37,6 +37,8 @@ Hubo risas, cansancio (Axel y Armando lo sintieron más), y esa satisfacción co
 Aprendimos algo nuevo, disfrutamos el frío del PNW, y volvimos con historias.
 
 ![La pesca del día](/static/images/mini-adventure/photo-6-800w.jpg)
+
+![El grupo explorando la costa](/static/images/mini-adventure/photo-7-800w.jpg)
 
 ---
 
