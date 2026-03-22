@@ -21,7 +21,7 @@ const defaultOptions = (cfg: GlobalConfiguration): Options => ({
   limit: 3,
   linkToMore: false,
   showTags: true,
-  filter: () => true,
+  filter: (f) => f.slug !== "index" && f.frontmatter?.draft !== true,
   sort: byDateAndAlphabetical(cfg),
 })
 
@@ -36,8 +36,22 @@ export default ((userOpts?: Partial<Options>) => {
     const pages = allFiles.filter(opts.filter).sort(opts.sort)
     const remaining = Math.max(0, pages.length - opts.limit)
     
-    // Extract last image from content (better for photo-centric posts)
-    const getLastImage = (content: string | undefined): string | null => {
+    // Extract thumbnail from frontmatter or fallback to text parsing
+    const getThumbnail = (page: QuartzPluginData): string | null => {
+      // Priority 1: Explicit thumbnail in frontmatter
+      if (page.frontmatter?.thumbnail) {
+        return page.frontmatter.thumbnail as string
+      }
+      
+      // Priority 2: Last image from gallery frontmatter
+      const gallery = page.frontmatter?.gallery
+      if (gallery && Array.isArray(gallery) && gallery.length > 0) {
+        const lastImage = gallery[gallery.length - 1]
+        return `/static/images/${lastImage}`
+      }
+      
+      // Priority 3: Extract from text content (fallback)
+      const content = page.text
       if (!content) return null
       const imgMatches = content.match(/!\[.*?\]\((.*?)\)/g)
       if (!imgMatches || imgMatches.length === 0) return null
@@ -53,7 +67,7 @@ export default ((userOpts?: Partial<Options>) => {
           {pages.slice(0, opts.limit).map((page) => {
             const title = page.frontmatter?.title ?? i18n(cfg.locale).propertyDefaults.title
             const tags = page.frontmatter?.tags ?? []
-            const thumbnail = getLastImage(page.text)
+            const thumbnail = getThumbnail(page)
 
             return (
               <li class="recent-li">

@@ -4,6 +4,7 @@ date: 2026-03-21
 tags: [adventure, beach, road-trip, pnw]
 location: "Grays Harbor, Washington"
 rating: 4
+thumbnail: "/static/images/mini-adventure/photo-7-800w.jpg"
 ---
 
 Diana y Adry nos lanzaron la propuesta hace dos semanas: Grays Harbor, a "pescar" moluscos. No sabía bien qué significaba eso, pero el plan sonaba suficientemente raro como para decir que sí. Primera aventura de vuelta a Seattle.
