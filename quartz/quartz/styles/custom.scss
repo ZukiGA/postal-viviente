@@ -609,3 +609,44 @@ h1.article-title {
 .breadcrumb-container span {
   font-weight: 500;
 }
+
+/* Dark mode overrides for chips and cards */
+:root[saved-theme="dark"] {
+  /* Tag chips */
+  .tag-link {
+    background-color: #2a2520 !important;
+    border-color: #4a4035 !important;
+    color: #d4c8b8 !important;
+  }
+
+  .tag-link:hover {
+    background-color: var(--olive-green) !important;
+    color: #fff !important;
+  }
+
+  /* Place card */
+  .place-card {
+    background: #2a2520 !important;
+    border-color: #4a4035 !important;
+  }
+
+  .place-card-title {
+    color: #9b8b7e !important;
+  }
+
+  .place-card-item strong {
+    color: #d4c8b8 !important;
+  }
+
+  /* Content meta */
+  .content-meta,
+  .meta-sep {
+    color: #9b8b7e !important;
+  }
+
+  /* Recent notes cards */
+  .recent-li {
+    background-color: #2a2520 !important;
+    border-color: #4a4035 !important;
+  }
+}
