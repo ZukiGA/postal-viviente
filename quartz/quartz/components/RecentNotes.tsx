@@ -36,11 +36,14 @@ export default ((userOpts?: Partial<Options>) => {
     const pages = allFiles.filter(opts.filter).sort(opts.sort)
     const remaining = Math.max(0, pages.length - opts.limit)
     
-    // Extract first image from content
-    const getFirstImage = (content: string | undefined): string | null => {
+    // Extract last image from content (better for photo-centric posts)
+    const getLastImage = (content: string | undefined): string | null => {
       if (!content) return null
-      const imgMatch = content.match(/!\[.*?\]\((.*?)\)/)
-      return imgMatch ? imgMatch[1] : null
+      const imgMatches = content.match(/!\[.*?\]\((.*?)\)/g)
+      if (!imgMatches || imgMatches.length === 0) return null
+      const lastMatch = imgMatches[imgMatches.length - 1]
+      const urlMatch = lastMatch.match(/!\[.*?\]\((.*?)\)/)
+      return urlMatch ? urlMatch[1] : null
     }
     
     return (
@@ -50,7 +53,7 @@ export default ((userOpts?: Partial<Options>) => {
           {pages.slice(0, opts.limit).map((page) => {
             const title = page.frontmatter?.title ?? i18n(cfg.locale).propertyDefaults.title
             const tags = page.frontmatter?.tags ?? []
-            const thumbnail = getFirstImage(page.text)
+            const thumbnail = getLastImage(page.text)
 
             return (
               <li class="recent-li">
