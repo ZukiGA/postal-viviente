@@ -1,14 +1,19 @@
 .content-meta {
   margin-top: 0;
-  color: var(--darkgray);
+  color: var(--gray);
+  font-size: 0.95rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0;
 
-  &[show-comma="true"] {
-    > *:not(:last-child) {
-      margin-right: 8px;
+  > *:not(:last-child) {
+    margin-right: 0.5em;
 
-      &::after {
-        content: ",";
-      }
+    &::after {
+      content: "·";
+      margin-left: 0.5em;
+      color: var(--gray);
     }
   }
 }
