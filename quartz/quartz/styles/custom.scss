@@ -599,8 +599,8 @@ body[data-slug="index"] article h1:first-of-type {
   display: block;
 }
 
-/* Center page title heading */
-h1.article-title {
+/* Center page title heading - only on index */
+body[data-slug="index"] h1.article-title {
   text-align: center;
 }
 
