@@ -44,7 +44,6 @@ Aprendimos algo nuevo, disfrutamos el frío del PNW, y volvimos con historias.
 - **Cuándo:** 21 de marzo, 2026
 - **Con quién:** 1233 y sus amigos (6 total)
 - **Duración:** 8 horas redondas (2 pescando)
-- **Costo aprox:** Gas + renta de auto (~$20 por persona)
 
 **Para la Próxima**
 
