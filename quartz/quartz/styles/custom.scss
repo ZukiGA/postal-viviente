@@ -650,3 +650,13 @@ h1.article-title {
     border-color: #4a4035 !important;
   }
 }
+
+/* More padding between page title and search bar */
+.page-title {
+  margin-bottom: 1.5rem;
+}
+
+/* Index title more top padding */
+body[data-slug="index"] h1.article-title {
+  padding-top: 2rem;
+}
