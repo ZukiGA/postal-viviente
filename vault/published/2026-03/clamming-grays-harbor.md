@@ -33,11 +33,11 @@ El olor a pescado te recibe cuando bajas del auto. No es desagradable — es int
 
 ![La playa y los carros](/static/images/mini-adventure/photo-3-800w.jpg)
 
-Adry nos explicó la técnica. Buscás círculos pequeños en la arena mojada — ahí es donde las almejas se esconden. Suena fácil, pero te la pasás las próximas dos horas medio encorvado, leyendo la playa como si fuera un mapa.
+Adry nos explicó la técnica. Buscas círculos pequeños en la arena mojada — ahí es donde las almejas se esconden. Suena fácil, pero te la pasas las próximas dos horas medio encorvado, leyendo la playa como si fuera un mapa.
 
 ![Buscando almejas](/static/images/mini-adventure/photo-4-800w.jpg)
 
-Hubo risas, cansancio (Axel y Armando lo sintieron más), y esa satisfacción colectiva cuando encontrás una. Al final: 40 almejas entre seis. Yo me dediqué a capturar todo el proceso.
+Hubo risas, cansancio (Axel y Armando lo sintieron más), y esa satisfacción colectiva cuando encuentras una. Al final: 40 almejas entre seis. Yo me dediqué a capturar todo el proceso.
 
 ![Las pozas de marea](/static/images/mini-adventure/photo-5-800w.jpg)
 
