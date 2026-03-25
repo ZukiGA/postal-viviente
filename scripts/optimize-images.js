@@ -47,6 +47,7 @@ async function optimizeImages() {
         // WebP
         const webpPath = path.join(outputDir, `${filename}-${size}w.webp`);
         await sharp(filePath)
+          .rotate() // Auto-rotate based on EXIF orientation
           .resize(size, null, { withoutEnlargement: true })
           .webp({ quality: QUALITY })
           .toFile(webpPath);
@@ -54,6 +55,7 @@ async function optimizeImages() {
         // JPEG fallback
         const jpegPath = path.join(outputDir, `${filename}-${size}w.jpg`);
         await sharp(filePath)
+          .rotate() // Auto-rotate based on EXIF orientation
           .resize(size, null, { withoutEnlargement: true })
           .jpeg({ quality: QUALITY })
           .toFile(jpegPath);
