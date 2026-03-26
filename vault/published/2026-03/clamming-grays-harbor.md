@@ -3,6 +3,7 @@ title: "Clamming en Grays Harbor"
 date: 2026-03-21
 tags: [adventure, beach, road-trip, pnw]
 location: "Grays Harbor, Washington"
+coordinates: [46.9515, -124.1044]
 rating: 4
 thumbnail: "/static/images/mini-adventure/photo-7-800w.jpg"
 distance: "2h 30m desde Seattle"

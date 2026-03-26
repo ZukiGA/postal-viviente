@@ -41,6 +41,10 @@ export const defaultContentPageLayout: PageLayout = {
       component: Component.ExploreSection(),
       condition: (page) => page.fileData.slug === "index",
     }),
+    Component.ConditionalRender({
+      component: Component.JourneyMap(),
+      condition: (page) => page.fileData.slug === "index",
+    }),
     Component.TagList(),
     Component.HeroImage(),
     Component.PlaceCard(),
