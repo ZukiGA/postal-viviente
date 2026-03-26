@@ -63,11 +63,12 @@ async function extractPalette(imageDir, maxImages = 3) {
     }
   }
 
-  // Simple k-means with 5 clusters
+  // Simple k-means with 5 clusters — deterministic init (evenly spaced)
   const k = 5;
   let centroids = [];
+  const step = Math.floor(allPixels.length / k);
   for (let i = 0; i < k; i++) {
-    centroids.push(allPixels[Math.floor(Math.random() * allPixels.length)].slice());
+    centroids.push(allPixels[i * step].slice());
   }
 
   for (let iter = 0; iter < 15; iter++) {

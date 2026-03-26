@@ -9,7 +9,7 @@ export default (() => {
     if (!fm?.thumbnail || !fm?.title || !fm?.location) return null
 
     const date = fm.date
-      ? new Date(fm.date as string).toLocaleDateString("es-MX", {
+      ? new Date(fm.date as string + "T12:00:00").toLocaleDateString("es-MX", {
           year: "numeric",
           month: "long",
           day: "numeric",

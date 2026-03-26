@@ -51,11 +51,6 @@ export default ((opts?: Partial<PlaceCardOptions>) => {
                 <strong>Distancia:</strong> {placeData.distance}
               </div>
             )}
-            {placeData.weather && (
-              <div class="place-card-item">
-                <strong>Clima:</strong> {placeData.weather}
-              </div>
-            )}
             <div class="place-card-item">
               <strong>Volvería:</strong> {formatWouldReturn(placeData.wouldReturn)}
             </div>

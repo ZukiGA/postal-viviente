@@ -4,7 +4,7 @@ date: 2026-03-21
 tags: [adventure, beach, road-trip, pnw]
 location: "Grays Harbor, Washington"
 coordinates: [46.9515, -124.1044]
-palette: ["#010101", "#0a0c0e", "#1a1f26", "#344750", "#588994"]
+palette: ["#000000", "#020202", "#13171b", "#30404a", "#578893"]
 weatherMemory:
   temp_max: 9
   temp_min: 6

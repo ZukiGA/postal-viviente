@@ -4,7 +4,7 @@ date: 2024-07-27
 tags: [adventure, hiking, pnw, mountains, road-trip]
 location: "Mt. Rainier National Park, Washington"
 coordinates: [46.7853, -121.7353]
-palette: ["#212619", "#5e6461", "#798381", "#bac2c2", "#dbe4da"]
+palette: ["#1c2214", "#43463a", "#656d6b", "#85908d", "#c5cecb"]
 weatherMemory:
   temp_max: 18
   temp_min: 6

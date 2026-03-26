@@ -42,15 +42,10 @@ export default (() => {
     // Unique places
     const places = new Set(posts.map((p: QuartzPluginData) => p.frontmatter?.location as string))
 
-    // Count photos (rough: count image references across all posts)
-    // For now use post count * avg
-    const photoCount = posts.length * 8 // estimate
-
     const stats = [
       { value: `${Math.round(totalKm).toLocaleString()} km`, label: "recorridos" },
       { value: `${posts.length}`, label: "historias" },
       { value: `${places.size}`, label: "lugares" },
-      { value: `~${photoCount}+`, label: "fotos" },
     ]
 
     return (
