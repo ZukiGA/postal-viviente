@@ -4,6 +4,13 @@ date: 2026-03-21
 tags: [adventure, beach, road-trip, pnw]
 location: "Grays Harbor, Washington"
 coordinates: [46.9515, -124.1044]
+palette: ["#010101", "#0a0c0e", "#1a1f26", "#344750", "#588994"]
+weatherMemory:
+  temp_max: 9
+  temp_min: 6
+  condition: "Nublado"
+  wind_kmh: 26
+  rain_mm: 0
 rating: 4
 thumbnail: "/static/images/mini-adventure/photo-7-800w.jpg"
 distance: "2h 30m desde Seattle"

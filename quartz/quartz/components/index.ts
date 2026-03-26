@@ -30,6 +30,10 @@ import PlaceCard from "./PlaceCard"
 import HeroImage from "./HeroImage"
 import IndexHero from "./IndexHero"
 import ExploreSection from "./ExploreSection"
+import WeatherMemory from "./WeatherMemory"
+import ColorPalette from "./ColorPalette"
+import TravelStats from "./TravelStats"
+import PostcardMode from "./PostcardMode"
 
 export {
   ArticleTitle,
@@ -64,5 +68,9 @@ export {
   HeroImage,
   IndexHero,
   ExploreSection,
+  WeatherMemory,
+  ColorPalette,
+  TravelStats,
+  PostcardMode,
 }
 

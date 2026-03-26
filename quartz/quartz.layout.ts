@@ -45,9 +45,16 @@ export const defaultContentPageLayout: PageLayout = {
       component: Component.JourneyMap(),
       condition: (page) => page.fileData.slug === "index",
     }),
+    Component.ConditionalRender({
+      component: Component.TravelStats(),
+      condition: (page) => page.fileData.slug === "index",
+    }),
     Component.TagList(),
+    Component.ColorPalette(),
     Component.HeroImage(),
     Component.PlaceCard(),
+    Component.WeatherMemory(),
+    Component.PostcardMode(),
   ],
   afterBody: [],
   left: [

@@ -792,3 +792,88 @@ body[data-slug="index"] h1.article-title {
 .page-title {
   margin-bottom: 1.5rem;
 }
+
+/* Weather Memory */
+.weather-memory {
+  margin: 0.5rem 0 1rem;
+  
+  .weather-memory-inner {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    font-size: 0.85rem;
+    color: var(--gray);
+    padding: 8px 12px;
+    background: var(--lightgray);
+    border-radius: 8px;
+    opacity: 0.85;
+  }
+
+  .weather-condition {
+    font-weight: 600;
+  }
+
+  .weather-temp {
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+/* Color Palette */
+.color-palette {
+  margin: 0.75rem 0 1.5rem;
+
+  .palette-bar {
+    display: flex;
+    height: 8px;
+    border-radius: 4px;
+    overflow: hidden;
+    
+    .palette-swatch {
+      flex: 1;
+      transition: flex 0.2s;
+      cursor: crosshair;
+      
+      &:hover {
+        flex: 2;
+      }
+    }
+  }
+}
+
+/* Travel Stats */
+.travel-stats {
+  margin: 1.5rem 0;
+
+  .travel-stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    text-align: center;
+
+    @media (max-width: 600px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  .travel-stat {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    background: var(--lightgray);
+    border-radius: 8px;
+  }
+
+  .travel-stat-value {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--secondary);
+    font-variant-numeric: tabular-nums;
+  }
+
+  .travel-stat-label {
+    font-size: 0.8rem;
+    color: var(--gray);
+    margin-top: 4px;
+  }
+}

@@ -4,6 +4,13 @@ date: 2024-07-27
 tags: [adventure, hiking, pnw, mountains, road-trip]
 location: "Mt. Rainier National Park, Washington"
 coordinates: [46.7853, -121.7353]
+palette: ["#212619", "#5e6461", "#798381", "#bac2c2", "#dbe4da"]
+weatherMemory:
+  temp_max: 18
+  temp_min: 6
+  condition: "Lluvia moderada"
+  wind_kmh: 8
+  rain_mm: 6.5
 rating: 5
 thumbnail: "/static/images/mt-rainier/photo-1-800w.jpg"
 distance: "2h 30m desde Seattle"

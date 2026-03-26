@@ -4,7 +4,7 @@
   "description": "Personal photography blog — cafes, travels, urban exploration",
   "private": true,
   "scripts": {
-    "build": "node scripts/strip-exif.js && node scripts/optimize-images.js && npx quartz build --directory quartz",
+    "build": "node scripts/resolve-coordinates.js && node scripts/enrich-weather.js && node scripts/extract-palette.js && node scripts/strip-exif.js && node scripts/optimize-images.js && npx quartz build --directory quartz",
     "serve": "cd quartz && npx quartz build --serve",
     "strip-exif": "node scripts/strip-exif.js",
     "optimize-images": "node scripts/optimize-images.js"
