@@ -44,6 +44,10 @@ echo "🔒 Step 3: Checking for EXIF GPS data..."
 node scripts/strip-exif.js
 
 echo ""
+echo "🗺️  Step 3b: Resolving coordinates for map..."
+node scripts/resolve-coordinates.js
+
+echo ""
 echo "📝 Step 4: Checking for changes..."
 if [[ -z $(git status --porcelain vault/ scripts/) ]]; then
   echo "✅ No changes to publish."
