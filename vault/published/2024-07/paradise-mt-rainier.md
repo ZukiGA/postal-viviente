@@ -10,7 +10,7 @@ distance: "2h 30m desde Seattle"
 weather: "Frío, nublado, neblina"
 wouldReturn: true
 activity: "Hiking"
-companions: "Adry, Axel, David Liao y amigos"
+companions: "Adry, Axel, David y amigos"
 template: "travel-story"
 ---
 
@@ -64,4 +64,4 @@ Y ya casi al final, la cascada. Agua cayendo entre pinos viejos con Rainier asom
 
 **Lo Que Me Llevo**
 
-Los hikes en PNW siempre son buenos, divertidos, y más si vas con un grupo grande. Necesito mejorar mi condición. Me cayeron bien todos los amigos de Adry — siempre es raro hablar inglés con tus amigos hispanohablantes, al menos para mí, pero te acostumbras. David Liao excelente host, si así se le puede llamar. Y siempre es bueno pasar tiempo con Axel y Adry.
+Los hikes en PNW siempre son buenos, divertidos, y más si vas con un grupo grande. Necesito mejorar mi condición. Me cayeron bien todos los amigos de Adry — siempre es raro hablar inglés con tus amigos hispanohablantes, al menos para mí, pero te acostumbras. David excelente host, si así se le puede llamar. Y siempre es bueno pasar tiempo con Axel y Adry.
