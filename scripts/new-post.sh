@@ -40,12 +40,12 @@ fi
 echo "  ✅ All image references valid"
 
 echo ""
-echo "🔒 Step 3: Checking for EXIF GPS data..."
-node scripts/strip-exif.js
+echo "🗺️  Step 3: Resolving coordinates for map..."
+node scripts/resolve-coordinates.js
 
 echo ""
-echo "🗺️  Step 3b: Resolving coordinates for map..."
-node scripts/resolve-coordinates.js
+echo "🔒 Step 3b: Stripping EXIF GPS data..."
+node scripts/strip-exif.js
 
 echo ""
 echo "📝 Step 4: Checking for changes..."

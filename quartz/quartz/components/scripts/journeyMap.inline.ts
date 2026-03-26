@@ -64,7 +64,7 @@ document.addEventListener("nav", async () => {
   if (posts.length > 1) {
     const lineCoords = posts.map((p) => [p.coordinates[0], p.coordinates[1]])
     L.polyline(lineCoords, {
-      color: "#D97706",
+      color: "#E07856",
       weight: 2,
       opacity: 0.6,
       dashArray: "8, 12",

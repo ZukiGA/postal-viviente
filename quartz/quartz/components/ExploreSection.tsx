@@ -21,13 +21,10 @@ export default (() => {
       .filter((f: QuartzPluginData) => f.slug !== "index" && f.frontmatter?.draft !== true)
       .forEach((f: QuartzPluginData) => {
         const location = f.frontmatter?.location as string | undefined
-        if (location) {
-          // Use the city/region name as the chip label
+        if (location && f.slug) {
           const parts = location.split(",")
           const label = parts[0].trim()
-          // Create a URL-friendly slug from the location
-          const locSlug = label.toLowerCase().replace(/\s+/g, "-")
-          places.set(label, locSlug)
+          places.set(label, f.slug)
         }
       })
 
@@ -53,8 +50,10 @@ export default (() => {
           <section class="explore-by-place">
             <h2>Explorar por lugar</h2>
             <div class="explore-chips">
-              {placeList.map(([label]) => (
-                <span class="explore-chip explore-chip-place">{label}</span>
+              {placeList.map(([label, slug]) => (
+                <a href={resolveRelative(fileData.slug!, slug)} class="internal explore-chip explore-chip-place">
+                  {label}
+                </a>
               ))}
             </div>
           </section>
