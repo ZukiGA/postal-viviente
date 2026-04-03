@@ -50,7 +50,7 @@ export const defaultContentPageLayout: PageLayout = {
       condition: (page) => page.fileData.slug === "index",
     }),
     Component.ConditionalRender({
-      component: Component.PostCatalog(),
+      component: Component.RecentNotes({ limit: 100 }),
       condition: (page) => page.fileData.slug === "catalogo",
     }),
     Component.TagList(),
