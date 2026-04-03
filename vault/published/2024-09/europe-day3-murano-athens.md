@@ -2,7 +2,7 @@
 title: "De Murano a Atenas: Dos Países en un Día"
 date: 2024-09-02
 location: "Murano, Italia → Atenas, Grecia"
-coordinates: [37.9715, 23.7267]
+coordinates: [45.4585, 12.3518]
 palette: ["#0a0a0a", "#2c2a28", "#5f5148", "#9d8c80", "#e0cdba"]
 weatherMemory:
   temp_max: 30
