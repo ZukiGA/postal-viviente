@@ -58,7 +58,7 @@ Santorini es famosa por sus atardeceres. Hay una razón: la caldera volcánica c
 
 ![La cueva-casa al atardecer](/static/images/europe-day5/photo-5-800w.jpg)
 
-Pasamos la tarde y la noche ahí. Vino, jacuzzi, el sol cayendo, las luces de Oia encendiéndose una por una. No necesitábamos ir a ningún lado.
+Pasamos la tarde y la noche ahí. Bebidas, jacuzzi, el sol cayendo, las luces de Oia encendiéndose una por una. No necesitábamos ir a ningún lado.
 
 ![Jacuzzi de noche](/static/images/europe-day5/photo-6-800w.jpg)
 
