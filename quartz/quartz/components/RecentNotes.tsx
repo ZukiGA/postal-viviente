@@ -33,7 +33,8 @@ export default ((userOpts?: Partial<Options>) => {
     cfg,
   }: QuartzComponentProps) => {
     const opts = { ...defaultOptions(cfg), ...userOpts }
-    const pages = allFiles.filter(opts.filter).sort(opts.sort)
+    const isCatalog = fileData.slug === "catalogo"
+    const pages = allFiles.filter(opts.filter).filter(f => f.slug !== "catalogo").sort(opts.sort)
     const remaining = Math.max(0, pages.length - opts.limit)
     
     // Extract thumbnail from frontmatter or fallback to text parsing
@@ -62,7 +63,7 @@ export default ((userOpts?: Partial<Options>) => {
     
     return (
       <div class={classNames(displayClass, "recent-notes")}>
-        <h2 class="recent-notes-title">Notas recientes</h2>
+        <h2 class="recent-notes-title">{isCatalog ? "Todas las publicaciones" : "Notas recientes"}</h2>
         <div class="recent-grid">
           {pages.slice(0, opts.limit).map((page) => {
             const title = page.frontmatter?.title ?? i18n(cfg.locale).propertyDefaults.title
