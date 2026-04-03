@@ -46,6 +46,10 @@ Los canales de Venecia en la mañana, cuando todavía no llegan las hordas de tu
 
 Visitamos un lugar donde vendían café y pastries. La verdad fue interesante ver cómo la gente en Italia desayuna: solo un espresso y un aperitivo en una barra, muy tranquilo, muy coqueto. Tratamos de hacerlo — no por performativos, sino porque teníamos hambre y era lo primero que encontramos. Pero en retrospectiva, muy buena primera impresión de la cultura italiana.
 
+Para el lunch nos sentamos en un restaurante junto a un canal. Comer al lado del agua mientras pasan las lanchas — así se almuerza en Venecia.
+
+![Restaurante junto al canal](/static/images/europe-day2/photo-10-800w.jpg)
+
 ## San Marcos
 
 Eventualmente, todos los caminos en Venecia te llevan a la Piazza San Marco. La Basílica es absurdamente hermosa — mosaicos dorados, cúpulas bizantinas, y una fila que da la vuelta a la plaza.
@@ -78,7 +82,7 @@ Cada callejón es una sorpresa. Restaurantes escondidos, arcos medievales, ropa 
 
 Mi teléfono marcó más de 25,000 pasos ese día. Los pies dolían. Las piernas dolían. Pero cada vez que pensábamos en regresar al Airbnb, aparecía otro canal, otro puente, otra vista que no podíamos ignorar.
 
-En la noche fuimos a cenar a un restaurante del que ya teníamos reservación en la Piazza San Marco — Quadri, creo que se llamaba. Muy fancy, old money vibes, muy interesante. Aunque a esas alturas ya estábamos sugestionados por todo.
+En la noche fuimos a cenar a un restaurante del que ya teníamos reservación junto a un canal — Quadri, creo que se llamaba. Muy fancy, old money vibes, muy interesante. Aunque a esas alturas ya estábamos sugestionados por todo.
 
 Venecia no te deja ir fácilmente.
 
