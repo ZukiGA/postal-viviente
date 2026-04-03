@@ -69,9 +69,9 @@ No estoy exagerando. Abrimos la puerta, subimos a la terraza, y ahí estaba — 
 
 ![El Partenón iluminado desde el Airbnb](/static/images/europe-day3/photo-9-800w.jpg)
 
-Bajamos a cenar a un restaurante local cerca del Airbnb. Música griega en vivo, comida que no sabíamos pronunciar pero que pedimos señalando el menú. Excelente primer adentramiento en Grecia.
+Bajamos a cenar a un restaurante local cerca del Airbnb. Música griega de fondo, comida que no sabíamos pronunciar pero que pedimos señalando el menú. Excelente primer adentramiento en Grecia.
 
-Dos países en un día. Desayunamos en una isla de vidrio soplado en Italia y cenamos viendo el Partenón en Grecia. Este viaje no tenía sentido — y por eso era perfecto.
+Dos países en un día. Desayunamos en una isla de vidrio soplado en Italia y cenamos viendo el Partenón en Grecia. Este viaje no tenía sentido  y por eso era perfecto y apenas estaba comenzando.
 
 ---
 
