@@ -91,13 +91,11 @@ export default ((userOpts?: Partial<Options>) => {
             )
           })}
         </div>
-        {opts.linkToMore && remaining > 0 && (
-          <p>
-            <a href={resolveRelative(fileData.slug!, opts.linkToMore)}>
-              {i18n(cfg.locale).components.recentNotes.seeRemainingMore({ remaining })}
-            </a>
-          </p>
-        )}
+        <p class="recent-notes-see-all">
+          <a href={resolveRelative(fileData.slug!, "catalogo" as SimpleSlug)} class="internal">
+            Ver todo →
+          </a>
+        </p>
       </div>
     )
   }

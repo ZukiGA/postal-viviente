@@ -7,4 +7,20 @@
   & > .recent-grid {
     margin-top: 1rem;
   }
+
+  & > .recent-notes-see-all {
+    margin-top: 1.25rem;
+    text-align: center;
+
+    a {
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: var(--olive-green);
+      border-bottom: none;
+
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+  }
 }

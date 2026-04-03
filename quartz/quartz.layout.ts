@@ -49,6 +49,10 @@ export const defaultContentPageLayout: PageLayout = {
       component: Component.TravelStats(),
       condition: (page) => page.fileData.slug === "index",
     }),
+    Component.ConditionalRender({
+      component: Component.PostCatalog(),
+      condition: (page) => page.fileData.slug === "catalogo",
+    }),
     Component.TagList(),
     Component.HeroImage(),
     Component.ColorPalette(),

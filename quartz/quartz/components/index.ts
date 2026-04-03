@@ -34,6 +34,7 @@ import WeatherMemory from "./WeatherMemory"
 import ColorPalette from "./ColorPalette"
 import TravelStats from "./TravelStats"
 import PostcardMode from "./PostcardMode"
+import PostCatalog from "./PostCatalog"
 
 export {
   ArticleTitle,
@@ -72,5 +73,6 @@ export {
   ColorPalette,
   TravelStats,
   PostcardMode,
+  PostCatalog,
 }
 
