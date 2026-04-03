@@ -91,11 +91,13 @@ export default ((userOpts?: Partial<Options>) => {
             )
           })}
         </div>
-        <p class="recent-notes-see-all">
-          <a href={resolveRelative(fileData.slug!, "catalogo" as SimpleSlug)} class="internal">
-            Ver todo →
-          </a>
-        </p>
+        {fileData.slug !== "catalogo" && (
+          <p class="recent-notes-see-all">
+            <a href={resolveRelative(fileData.slug!, "catalogo" as SimpleSlug)} class="internal">
+              Ver todo →
+            </a>
+          </p>
+        )}
       </div>
     )
   }
